@@ -1,0 +1,126 @@
+/* 
+Programme CSS
+-----------------
+Réalisé par Nicolas CHANTEPIE 
+*/
+
+/* Mise en page des blocs*/
+
+body{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    width:1500px;
+    height:2385px;
+
+}
+
+#menu{
+    display:flex;
+    flex-wrap:wrap;
+    
+    
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 137px;
+    margin-top: 100px;
+    font-size: 30px;
+    background: #009688;
+}
+
+/*----------Mise en page entête-----------*/
+
+header {
+    height: 260px;
+    display: flex;
+    background:#009688;
+}
+
+h1 {
+    margin: auto;
+    color: #FDD835;
+    font-size:10em;
+}
+
+/*----------Mise en page menu-------------*/
+
+#note {   
+    margin:100px 50px 50px 157px;
+  
+}
+
+#chic {
+    
+    margin: 100px 157px 50px 50px;
+}
+
+#délice {
+    
+    margin: 50px 50px 100px 157px;
+}
+
+
+#palette {
+    margin: 50px 157px 100px 50px;
+
+}
+#note, #chic, #délice, #palette {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 535px;
+    height: 759px;
+}
+/*----------Mise en page aside------------*/
+
+aside {
+    width: 655px;
+    height: 117px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    background: #009688;
+    color: #FDD835;
+}
+
+/*----------Mise en page footer-----------*/
+
+
+#mentions, #contact {
+    width: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FDD835;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Bordures provisoire*/
+
+#bloc_page, header, aside, footer, #mentions, #contact, h1
+{
+    border:none;
+}
+
+#note, #chic, #délice, #palette
+{
+    border:1px solid black;
+}
