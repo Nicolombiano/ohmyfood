@@ -15,6 +15,14 @@ body{
 
 }
 
+
+header {
+    height: 260px;
+    display: flex;
+    background:#579C87;
+   
+}
+
 #menu{
     display:flex;
     flex-wrap:wrap;
@@ -24,21 +32,21 @@ body{
 
 footer {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     height: 137px;
     margin-top: 100px;
     font-size: 30px;
-    background: #009688;
+    background: #579C87;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+   
+ 
 }
 
 /*----------Mise en page entête-----------*/
 
-header {
-    height: 260px;
-    display: flex;
-    background:#009688;
-}
 
 h1 {
     margin: auto;
@@ -74,6 +82,7 @@ h1 {
     align-items: center;
     width: 535px;
     height: 759px;
+    background-color: burlywood;
 }
 /*----------Mise en page aside------------*/
 
@@ -85,7 +94,8 @@ aside {
     justify-content: center;
     align-items: center;
     font-size: 5em;
-    background: #009688;
+    border-radius: 15px;
+    background: #579C87;
     color: #FDD835;
 }
 

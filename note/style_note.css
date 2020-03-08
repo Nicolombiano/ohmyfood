@@ -1,0 +1,106 @@
+/* 
+Programme CSS
+-----------------
+Réalisé par Nicolas CHANTEPIE 
+*/
+
+body, header, footer, .tarifs, p, #prelude, #point_dorgue, #mouvement_final, #mentions, #contact, section
+{
+    border:1px solid black;
+}
+/*Début de programmation*/
+
+/*Mise en page corps*/
+
+body
+    {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+   
+
+}
+
+header {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 260px;
+    background:#579C87;
+   
+}
+
+h1 {
+    
+    color: #FDD835;
+    font-size: 10em;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 137px;
+    margin-top: 100px;
+    font-size: 30px;
+    background: #579C87;
+    
+}
+
+/*Mise en page du menu*/
+
+section
+{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+   
+}
+.la_note
+{
+    margin: auto;
+    background: yellow;
+    height: 100px;
+}
+
+#prelude, #point_dorgue
+{
+    display:flex;
+    justify-content: space-between;
+    margin:0px 250px 0px 250px;
+
+}
+#mouvement_final {
+    margin: 0px 250px 0px 250px;
+}
+h3:hover
+{
+    text-decoration:underline;
+}
+
+h3
+{
+    font-style:italic;
+    text-align:center;
+}
+.hr
+{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.hr::before,
+.hr::after {
+    /* la couleur est volontairement absente ; ainsi elle sera celle du texte */
+    border-top: 1em solid;
+
+    /* nécessaire pour afficher les pseudo-éléments */
+    content: "";
+
+    /* partage le reste de la largeur disponible */
+    flex: 1;
+
+    /* espace les traits du texte */
+    margin: 15px 70px;
+}
