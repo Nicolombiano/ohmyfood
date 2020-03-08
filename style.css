@@ -50,7 +50,7 @@ footer {
 
 h1 {
     margin: auto;
-    color: #FDD835;
+    color: #FDCB46;
     font-size:10em;
 }
 
@@ -58,22 +58,28 @@ h1 {
 
 #note {   
     margin:100px 50px 50px 157px;
+    background-color: #FDE1DD;
+    color: #3D1319;
   
 }
 
 #chic {
     
     margin: 100px 157px 50px 50px;
+    background-color: #FFF5FE;
+    
 }
 
 #délice {
     
     margin: 50px 50px 100px 157px;
+    background-color: #F9F9F9;
 }
 
 
 #palette {
     margin: 50px 157px 100px 50px;
+    background-color: #FDFFFD;
 
 }
 #note, #chic, #délice, #palette {
@@ -82,8 +88,13 @@ h1 {
     align-items: center;
     width: 535px;
     height: 759px;
-    background-color: burlywood;
 }
+
+strong
+{
+    font-size: 5em;
+}
+
 /*----------Mise en page aside------------*/
 
 aside {
@@ -96,7 +107,7 @@ aside {
     font-size: 5em;
     border-radius: 15px;
     background: #579C87;
-    color: #FDD835;
+    color: #FDCB46;
 }
 
 /*----------Mise en page footer-----------*/
@@ -107,7 +118,7 @@ aside {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #FDD835;
+    color: #FDCB46;
 }
 
 
@@ -130,7 +141,38 @@ aside {
     border:none;
 }
 
-#note, #chic, #délice, #palette
+.fas
 {
-    border:1px solid black;
+    font-size:60px;
+    
+    background: -webkit-gradient(linear ,(from #F15F62 ,to #F6916A));
+    -webkit-background-clip: ;
+    -webkit-text-fill-color: transparent;
+} 
+#menunote
+{
+    color: #3D1319;
+}
+#menuchic
+{
+    color:#c77412;
+}
+#menudelice
+{
+    color: #0887FB;
+}
+
+#menupalette
+{
+    color:#72BF56;
+}
+
+span
+{
+    color: #FDCB46;
+}
+
+a:link
+{
+    text-decoration: none;
 }
