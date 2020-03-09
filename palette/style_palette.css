@@ -4,74 +4,76 @@ Programme CSS
 Réalisé par Nicolas CHANTEPIE 
 */
 
-body, header, footer, .tarifs, p, #prelude, #point_dorgue, #mouvement_final, #mentions, #contact, section
-{
-    border:1px solid black;
-}
 /*Début de programmation*/
 
 /*Mise en page corps*/
 
 body
     {
-    height:2382px;
     display:flex;
     flex-direction:column;
+    color: #3D1319;
+    width:1281px;
+    height:2285px;
 }
-
+/*Mise en page header-------------------------------------------------------------*/
 header {
-    height: 260px;
-    background: #579C87;
-    display:flex;
-    justify-content:center;
-    align-items:center;   
-    width: auto;
-}
-
-h1 {
     
-    color: #FDD835;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 260px;
+    background:#579C87;
+    border-bottom: 3px solid black;
+   
+}
+h1 {
+    color: #FDCB46;
     font-size: 10em;
 }
+/*Fin de mise en page header------------------------------------------------------*/
 
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    height: 137px;
-    font-size: 30px;
-    background: #579C87;
-    position: fixed;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-}
-
-/*Mise en page du menu*/
 
 section
 {
     display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    width:auto;
-    width: 1185;
-    height:1689px;
+    flex-direction:column; 
+    width: 1181px;
+    height: 1782px;
+    border: black 2px solid;
+    margin: 50px 50px 201px 50px;
+    border: black solid 2px;
+    background-color: #FDFFFD;
 }
-#palette {
-    width: auto;
-    height: 260px;
+/*Mise en page section menu ------------------------------------------------------*/
+
+#menu {
+    margin-top: 80px;
+ }
+
+#palette { 
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
     text-align: center;
-    background-color: white;
+    background-color: #FDFFFD;
+    border: 1px black solid ;
 }
 
+
+p
+{
+    line-height: 55px;
+    margin: 0px;    
+}
 #entrée, #plats, #dessert
 {
-    display:flex;
-    justify-content: space-between;
-    margin:0px 150px 0px 150px;
-    height: 300px;
-
+        display:flex;
+        justify-content: space-between;
+        font-size: 25px;
+        margin:60px 100px 60px 100px;
+        border: solid 1px black;
+    
 }
 
 h3:hover
@@ -83,8 +85,10 @@ h3
 {
     font-style:italic;
     text-align:center;
+    font-size: 30px;
+    border: solid black 1px;
 }
-.hr
+.hr 
 {
     display: flex;
     align-items: center;
@@ -93,7 +97,7 @@ h3
 .hr::before,
 .hr::after {
     /* la couleur est volontairement absente ; ainsi elle sera celle du texte */
-    border-top: 1em solid;
+    border-top: 0.2em solid;
 
     /* nécessaire pour afficher les pseudo-éléments */
     content: "";
@@ -102,9 +106,41 @@ h3
     flex: 1;
 
     /* espace les traits du texte */
-    margin: 15px 70px;
+    margin: 45px 100px;
 }
- ul
- {
-    list-style: none; 
- }
+/*Mise en page section footer ----------------------------------------------------*/
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width:1281px;
+    height: 137px;
+    font-size: 30px;
+    background: #579C87;
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+}
+
+#mentions, #contact 
+{
+    width: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span
+{
+    color: #FDCB46;
+}
+
+a:link
+{
+    text-decoration: none;
+}
+
+/*Fin de mise en page section footer -----------------------------------------------*/
+
+
