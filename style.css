@@ -121,26 +121,6 @@ aside {
     color: #FDCB46;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Bordures provisoire*/
-
-#bloc_page, header, aside, footer, #mentions, #contact, h1
-{
-    border:none;
-}
-
 .fas
 {
     font-size:60px;
@@ -176,3 +156,23 @@ a:link
 {
     text-decoration: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Bordures provisoire*/
+
+#bloc_page, header, aside, footer, #mentions, #contact, h1
+{
+    border:none;
+}
+
