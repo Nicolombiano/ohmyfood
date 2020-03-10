@@ -6,6 +6,22 @@ Réalisé par Nicolas CHANTEPIE
 
 
 /*Début de programmation*/
+/*Déclaration des polices-----------------------------------------------------------*/
+
+@font-face {
+    font-family: 'kalam';
+    src:  url('kalam/Kalam-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserrat';
+    src:  url('montserrat/Montserrat-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*Fin de déclaration des polices--------------------------------------------------*/
 
 
 
@@ -16,6 +32,7 @@ body
     color: #3D1319;
     width:1281px;
     height:2285px;
+    font-family: 'montserrat', Impact, Helvetica, serif ;
 }
 /*Mise en page header-------------------------------------------------------------*/
 header {
@@ -25,8 +42,6 @@ header {
     align-items: center;
     height: 260px;
     background:#579C87;
-    border-bottom: 3px solid black;
-   
 }
 h1 {
     color: #FDCB46;
@@ -41,10 +56,9 @@ section
     flex-direction:column; 
     width: 1181px;
     height: 1782px;
-    border: black 2px solid;
     margin: 50px 50px 201px 50px;
-    border: black solid 2px;
     background-color: #FDE1DD;
+    font-family:'kalam', Impact, Helvetica, serif ;
 }
 /*Mise en page section menu ------------------------------------------------------*/
  #menu
@@ -58,13 +72,8 @@ section
     justify-content: space-between;
     font-size: 25px;
     margin:80px 100px 80px 100px;
-    border: solid 1px black;
+}
 
-}
-{
-    margin: 0px 250px 0px 250px;
-    border: solid 1px black;
-}
 h3:hover
 {
     text-decoration:underline;
@@ -72,10 +81,8 @@ h3:hover
 
 h3
 {
-    font-style:italic;
     text-align:center;
     font-size: 40px;
-    border: solid black 1px;
 }
 .hr
 {
@@ -108,7 +115,6 @@ h3
     margin-top:100px;
     background-color: #FDE1DD;
     height: 160px;  
-    border: solid 1px black;
 }   
     
 #logo p
@@ -116,7 +122,6 @@ h3
     display: flex;
     justify-content: center;
     align-items: center;
-    border: black 1px solid;
     font-size: 62px;
     height: 66px;
     margin-top:10px;
@@ -134,7 +139,6 @@ h2
     font-size: 45px;
     text-align: center;
     margin-bottom: 100px;
-    border: 1px black solid ;
 }
 p{
     line-height: 30px;
@@ -148,12 +152,13 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width:1281px;
     height: 137px;
     font-size: 30px;
     background: #579C87;
     position: fixed;
     right: 0px;
-    left: 0px;
+    left: 8px;
     bottom: 0px;
 }
 
