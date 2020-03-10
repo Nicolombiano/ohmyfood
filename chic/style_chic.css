@@ -4,24 +4,29 @@ Programme CSS
 Réalisé par Nicolas CHANTEPIE 
 */
 
-body, header, footer, .tarifs, p, #prelude, #point_dorgue, #mouvement_final, #mentions, #contact, section
-{
-    border:1px solid black;
+
+/*Début de programmation*/
+
+/*Déclaration des polices-----------------------------------------------------------*/
+@font-face {
+    font-family: 'crimson';
+    src:  url('crimson/Crimson-Roman.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
-/*Début de programmation*/
-
-/*Mise en page corps*/
-
-/* 
-Programme CSS
------------------
-Réalisé par Nicolas CHANTEPIE 
-*/
-
-
-/*Début de programmation*/
-
-
+@font-face {
+    font-family: 'kurale';
+    src:  url('kurale/kurale-regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserrat';
+    src:  url('montserrat/Montserrat-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*Fin de déclaration des polices--------------------------------------------------*/
 
 body
     {
@@ -30,21 +35,21 @@ body
     color: #3D1319;
     width:1281px;
     height:2285px;
+    font-family: 'montserrat', Impact, Helvetica, serif ;
 }
 /*Mise en page header-------------------------------------------------------------*/
-header {
-    
+header {  
     display: flex;
     justify-content: center;
     align-items: center;
     height: 260px;
-    background:#579C87;
-    border-bottom: 3px solid black;
-   
+    background:#579C87; 
+
 }
+
 h1 {
     color: #FDCB46;
-    font-size: 10em;
+    font-size: 8em;
 }
 /*Fin de mise en page header------------------------------------------------------*/
 
@@ -54,11 +59,11 @@ section
     flex-direction:column; 
     width: 1181px;
     height: 1782px;
-    border: black 2px solid;
     margin: 50px 50px 201px 50px;
-    border: black solid 2px;
     background-color: #FFF5FE;
+    font-family:'crimson', Impact, Helvetica, serif ;
 }
+
 /*Mise en page section menu ------------------------------------------------------*/
 
 #menu{
@@ -68,15 +73,22 @@ section
 #chic {
     display: flex;
     justify-content: center;
-
     font-size: 45px;
     text-align: center;
-
     background-color: #FFF5FE;
-    border: 1px black solid ;
 }
 
-
+#chic p
+{
+    padding-top: 20px;
+    width: 700px;
+    height: 100px;
+    font-size: 65px;
+    font-family: 'kurale', Impact, Helvetica,serif ;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0228DD), to(#8F5BFE));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 p
 {
     line-height: 55px;
@@ -84,13 +96,26 @@ p
 }
 #entrée, #plats, #dessert
 {
-        display:flex;
-        justify-content: space-between;
-        font-size: 25px;
-        margin:60px 100px 60px 100px;
-        border: solid 1px black;
-    
+    display:flex;
+    justify-content: space-between;
+    font-size: 25px;
+    margin:60px 100px 60px 100px;   
 }
+
+#hr_appetit, #entrée
+{
+    color: #C67412;
+}
+
+#hr_plaisir, #plats
+{
+    color: #A56799;
+}
+#hr_gourmandise, #dessert
+{
+    color: #6E4CCC;
+}
+#menu
 
 h3:hover
 {
@@ -102,18 +127,18 @@ h3
     font-style:italic;
     text-align:center;
     font-size: 30px;
-    border: solid black 1px;
+
 }
-.hr 
+#hr_appetit, #hr_plaisir, #hr_gourmandise 
 {
     display: flex;
     align-items: center;
     text-align: center;
 }
-.hr::before,
-.hr::after {
+#hr_appetit::before,
+#hr_appetit::after {
     /* la couleur est volontairement absente ; ainsi elle sera celle du texte */
-    border-top: 0.2em solid;
+    border-top: 0.2em solid #C67412;
 
     /* nécessaire pour afficher les pseudo-éléments */
     content: "";
@@ -125,6 +150,35 @@ h3
     margin: 45px 100px;
 }
 
+#hr_plaisir::before,
+#hr_plaisir::after {
+    /* la couleur est volontairement absente ; ainsi elle sera celle du texte */
+    border-top: 0.2em solid #A56799;
+
+    /* nécessaire pour afficher les pseudo-éléments */
+    content: "";
+
+    /* partage le reste de la largeur disponible */
+    flex: 1;
+
+    /* espace les traits du texte */
+    margin: 45px 100px;
+}
+
+#hr_gourmandise::before,
+#hr_gourmandise::after {
+    /* la couleur est volontairement absente ; ainsi elle sera celle du texte */
+    border-top: 0.2em solid #6E4CCC;
+
+    /* nécessaire pour afficher les pseudo-éléments */
+    content: "";
+
+    /* partage le reste de la largeur disponible */
+    flex: 1;
+
+    /* espace les traits du texte */
+    margin: 45px 100px;
+}
 
 
 /*Mise en page section footer ----------------------------------------------------*/
@@ -138,7 +192,7 @@ footer {
     background: #579C87;
     position: fixed;
     right: 0px;
-    left: 0px;
+    left: 8px;
     bottom: 0px;
 }
 
