@@ -4,6 +4,28 @@ Programme CSS
 Réalisé par Nicolas CHANTEPIE 
 */
 
+/*Déclaration des polices-----------------------------------------------------------*/
+
+@font-face {
+    font-family: 'dancingscript';
+    src:  url('dancing-script/DancingScript-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'abrilfatface';
+    src:  url('abril-fatface/AbrilFatface-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserrat';
+    src:  url('montserrat/Montserrat-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*Fin de déclaration des polices--------------------------------------------------*/
 /* Mise en page des blocs*/
 
 body{
@@ -12,9 +34,11 @@ body{
     justify-content:space-between;
     width:1500px;
     height:2385px;
-
+    font-family: 'montserrat', Impact, Helvetica, serif ;
 }
 
+
+/*----------Mise en page entête-----------*/
 
 header {
     height: 260px;
@@ -23,31 +47,6 @@ header {
    
 }
 
-#menu{
-    display:flex;
-    flex-wrap:wrap;
-    
-    
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    height: 137px;
-    margin-top: 100px;
-    font-size: 30px;
-    background: #579C87;
-    position: fixed;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-   
- 
-}
-
-/*----------Mise en page entête-----------*/
-
-
 h1 {
     margin: auto;
     color: #FDCB46;
@@ -55,23 +54,28 @@ h1 {
 }
 
 /*----------Mise en page menu-------------*/
+#menu
+{
+    display:flex;
+    flex-wrap:wrap;   
+}
 
-#note {   
+#note 
+{   
     margin:100px 50px 50px 157px;
     background-color: #FDE1DD;
-    color: #3D1319;
-  
+    color: #3D1319; 
 }
 
 #chic {
     
     margin: 100px 157px 50px 50px;
     background-color: #FFF5FE;
-    
+    font-family: 'abrilfatface', Impact, Helvetica, serif ;   
 }
 
-#délice {
-    
+#délice 
+{ 
     margin: 50px 50px 100px 157px;
     background-color: #F9F9F9;
 }
@@ -94,41 +98,6 @@ strong
 {
     font-size: 5em;
 }
-
-/*----------Mise en page aside------------*/
-
-aside {
-    width: 655px;
-    height: 117px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 5em;
-    border-radius: 15px;
-    background: #579C87;
-    color: #FDCB46;
-}
-
-/*----------Mise en page footer-----------*/
-
-
-#mentions, #contact {
-    width: 260px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #FDCB46;
-}
-
-.fas
-{
-    font-size:60px;
-    
-    background: -webkit-gradient(linear ,(from #F15F62 ,to #F6916A));
-    -webkit-background-clip: ;
-    -webkit-text-fill-color: transparent;
-} 
 #menunote
 {
     color: #3D1319;
@@ -147,10 +116,59 @@ aside {
     color:#72BF56;
 }
 
+/*----------Mise en page aside------------*/
+
+aside {
+    width: 655px;
+    height: 117px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    border-radius: 15px;
+    background: #579C87;
+    color: #FDCB46;
+}
+
+/*----------Mise en page footer-----------*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    height: 137px;
+    margin-top: 100px;
+    font-size: 30px;
+    background: #579C87;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    left: 8px; 
+}
+
+.wiggle
+{
+    width: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 span
 {
     color: #FDCB46;
 }
+.fas
+{
+    font-size:60px;
+    
+    background: -webkit-gradient(linear ,(from #F15F62 ,to #F6916A));
+    -webkit-background-clip: ;
+    -webkit-text-fill-color: transparent;
+} 
+
+
+
 
 a:link
 {
@@ -158,21 +176,24 @@ a:link
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-/*Bordures provisoire*/
-
-#bloc_page, header, aside, footer, #mentions, #contact, h1
+@-webkit-keyframes shake
 {
-    border:none;
+    0% {-webkit-transform: translate(2px,2px);}
+    10% {-webkit-transform: translate(-2px, -2px);}
+    20% {-webkit-transform: translate(2px,2px);}
+    30% {-webkit-transform: translate(-2px, -2px);}
+    40% {-webkit-transform: translate(2px,2px);}
+    50% {-webkit-transform: translate(-2px, -2px);}
+    60% {-webkit-transform: translate(2px,2px);}
+    70% {-webkit-transform: translate(-2px, -2px);}
+    80% {-webkit-transform: translate(2px,2px);}
+    90% {-webkit-transform: translate(-2px, -2px);}
+    100% {-webkit-transform: translate(2px,2px);}
 }
 
+.wiggle :hover
+{
+    -webkit-animation-name:shake;
+    -webkit-animation-duration: 0.8s;
+    -webkit-animation-iteration-count: infinite ;
+}
