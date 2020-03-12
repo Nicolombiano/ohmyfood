@@ -26,6 +26,7 @@ Réalisé par Nicolas CHANTEPIE
     font-style: normal;
 }
 /*Fin de déclaration des polices--------------------------------------------------*/
+
 /* Mise en page des blocs*/
 
 body{
@@ -36,7 +37,6 @@ body{
     height:2385px;
     font-family: 'montserrat', Impact, Helvetica, serif ;
 }
-
 
 /*----------Mise en page entête-----------*/
 
@@ -54,6 +54,7 @@ h1 {
 }
 
 /*----------Mise en page menu-------------*/
+
 #menu
 {
     display:flex;
@@ -172,7 +173,6 @@ a:link
 {
     text-decoration: none;
 }
-
 
 @-webkit-keyframes shake
 {
