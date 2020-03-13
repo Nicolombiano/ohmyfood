@@ -10,14 +10,14 @@ Réalisé par Nicolas CHANTEPIE
 
 @font-face {
     font-family: 'kalam';
-    src:  url('kalam/Kalam-Regular.ttf') format('truetype');
+    src:  url('../police/kalam/Kalam-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'montserrat';
-    src:  url('montserrat/Montserrat-Regular.otf') format('truetype');
+    src:  url('../police/montserrat/Montserrat-Regular.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
