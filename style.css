@@ -5,26 +5,61 @@ Réalisé par Nicolas CHANTEPIE
 */
 
 /*Déclaration des polices-----------------------------------------------------------*/
+@font-face {
+    font-family: 'montserrat';
+    src:  url('police/montserrat/Montserrat-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'devonshire';
+    src:  url('police/devonshire/Devonshire-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @font-face {
-    font-family: 'dancingscript';
-    src:  url('dancing-script/DancingScript-Regular.otf') format('truetype');
+    font-family: 'itim';
+    src:  url('police/Itim/Itim-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'abrilfatface';
-    src:  url('abril-fatface/AbrilFatface-Regular.otf') format('truetype');
+    src:  url('police/abril-fatface/AbrilFatface-Regular.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
-    font-family: 'montserrat';
-    src:  url('montserrat/Montserrat-Regular.otf') format('truetype');
+    font-family: 'chilanka';
+    src:  url('police/chilanka/Chilanka-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'dancingscript';
+    src:  url('police/dancing-script/DancingScript-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kaushanscript';
+    src:  url('police/kaushan-script/KaushanScript-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kurale';
+    src:  url('police/kurale/kurale-regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*Fin de déclaration des polices--------------------------------------------------*/
 
 /* Mise en page des blocs*/
@@ -43,8 +78,7 @@ body{
 header {
     height: 260px;
     display: flex;
-    background:#579C87;
-   
+    background:#579C87;   
 }
 
 h1 {
@@ -63,16 +97,53 @@ h1 {
 
 #note 
 {   
+    display: flex;
+    flex-direction: column;
     margin:100px 50px 50px 157px;
-    background-color: #FDE1DD;
-    color: #3D1319; 
+    background-color: #FDE1DD;    
 }
 
-#chic {
-    
+#note .fas
+{
+    display: inline-block ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(left, #F15F62, #F6916A);
+}
+
+#note h2
+{
+    margin-top: 5px;
+    font-size: 36px;
+    font-family: 'devonshire', Impact, Helvetica, serif ;  
+}
+
+#note strong
+{
+    font-family: 'Itim', Impact, Helvetica, serif ;
+    color: #3D1319;
+}
+
+#chic {  
     margin: 100px 157px 50px 50px;
     background-color: #FFF5FE;
+}
+
+#chic h2
+{
+    font-size: 36px;
+    font-family: 'kurale', Impact, Helvetica, serif ;   
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(left, #DB8528, #8F5BFE);
+}
+
+#chic strong
+{
+    display: flex;
+    justify-content: center;  
     font-family: 'abrilfatface', Impact, Helvetica, serif ;   
+    color:#c77412;
 }
 
 #délice 
@@ -80,12 +151,42 @@ h1 {
     margin: 50px 50px 100px 157px;
     background-color: #F9F9F9;
 }
-
-
-#palette {
+#délice h2
+{
+    font-size: 36px;
+    font-family: 'dancingscript', Impact, Helvetica, serif ;   
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(left, #0228DD, #0889FB);
+}
+#délice strong
+{
+    display: flex;
+    justify-content: center;  
+    font-family: 'chilanka', Impact, Helvetica, serif ;   
+    color:#0887FB;
+}
+#palette 
+{
     margin: 50px 157px 100px 50px;
     background-color: #FDFFFD;
 
+}
+#palette h2
+{
+    font-size: 36px;
+    font-family: 'kaushanscript', Impact, Helvetica, serif ;   
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(left, #3D923A, #BEFF7F);
+}
+
+#palette strong
+{
+    display: flex;
+    justify-content: center;  
+    font-family: 'chilanka', Impact, Helvetica, serif ;   
+    color:#72BF56;
 }
 #note, #chic, #délice, #palette {
     display: flex;
@@ -97,24 +198,8 @@ h1 {
 
 strong
 {
-    font-size: 5em;
-}
-#menunote
-{
-    color: #3D1319;
-}
-#menuchic
-{
-    color:#c77412;
-}
-#menudelice
-{
-    color: #0887FB;
-}
-
-#menupalette
-{
-    color:#72BF56;
+    font-size: 3em;
+    font-weight: normal ;
 }
 
 /*----------Mise en page aside------------*/
@@ -162,11 +247,8 @@ span
 
 .fas
 {
-    font-size:60px;
-    
-    background: -webkit-gradient(linear ,(from #F15F62 ,to #F6916A));
-    -webkit-background-clip: ;
-    -webkit-text-fill-color: transparent;
+    font-size:60px;  
+   
 } 
 
 a:link
@@ -196,10 +278,15 @@ a:link
     -webkit-animation-iteration-count: infinite ;
 }
 
-#note :hover , #chic :hover, #délice :hover, #palette :hover
+#note :hover , #délice :hover, #palette :hover
 {
     transform: scale(1.6);
     transition-duration: 180ms;
+}
+.zoom :hover
+{
+    transform: scale(1.6);
+    transition-duration: 180ms; 
 }
 
 aside #apres, aside:hover #avant
@@ -250,3 +337,6 @@ aside:hover #apres
     }
 }
 
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-image: -webkit-linear-gradient(left, #DB8528, #8F5BFE);
