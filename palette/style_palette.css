@@ -31,7 +31,12 @@ Réalisé par Nicolas CHANTEPIE
     font-weight: normal;
     font-style: normal;
 }
-
+@font-face {
+    font-family: 'montserrat-semibold';
+    src:  url('../police/montserrat/Montserrat-SemiBold.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 /*Fin de déclaration des polices--------------------------------------------------*/
 
 /*Mise en page corps*/
@@ -41,8 +46,6 @@ body
     display:flex;
     flex-direction:column;
     color: #3D1319;
-    width:1281px;
-    height:2285px;
     font-family: 'montserrat', Impact, Helvetica, serif ;
 }
 /*Mise en page header-------------------------------------------------------------*/
@@ -56,7 +59,8 @@ header {
 }
 h1 {
     color: #FDCB46;
-    font-size: 10em;
+    font-size: 8em;
+    font-family: 'montserrat-semibold','montserrat', Impact, Helvetica, serif ;
 }
 /*Fin de mise en page header------------------------------------------------------*/
 
@@ -65,11 +69,10 @@ section
 {
     display:flex;
     flex-direction:column; 
-    width: 1181px;
-    height: 1782px;
-    border: black 2px solid;
-    margin: 50px 50px 201px 50px;
-    border: black solid 2px;
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 200px;
     background-color: #FDFFFD;
     font-family:'caveatregular', Impact, Helvetica, serif ;
 
@@ -87,18 +90,17 @@ section
     text-align: center;
     background-color: #FDFFFD;
 }
-#palette p
+h2
 {
-    padding-top: 20px;
+    padding-top: 120px;
     width: 700px;
-    height: 100px;
-    font-size: 65px;
+    height: 120px;
+    font-size: 80px;
     font-family: 'kaushanscript', Impact, Helvetica,serif ;
-    background: -webkit-gradient(linear, left top, left bottom, from(#41963C), to(#B8FA7C));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(left, #3D923A, #BEFF7F);
 }
-
 p
 {
     line-height: 55px;
@@ -106,10 +108,12 @@ p
 }
 #entrée, #plats, #dessert
 {
-        display:flex;
-        justify-content: space-between;
-        font-size: 25px;
-        margin:60px 100px 60px 100px;   
+    display:flex;
+    justify-content: space-between;
+    font-size: 30px;
+    margin:60px 100px 60px 100px;  
+    border: 1px solid black;
+
 }
 
 h3:hover
@@ -119,12 +123,18 @@ h3:hover
 
 h3
 {
-    font-style:italic;
     text-align:center;
-    font-size: 30px;
-    border: solid black 1px;
+    font-size: 40px;
 }
 
+.tarifs
+{
+    font-size: 34px;
+    width: 20%;
+    border: black 1px solid;  
+    text-align: right;
+    padding-right: 5px;
+}
 /* Partie insérer un text au milieur d'un trait-------------------------------------------*/
 .hr 
 {
@@ -136,7 +146,7 @@ h3
 .hr::before,
 .hr::after {
     /* la couleur est volontairement absente ; ainsi elle sera celle du texte */
-    border-top: 0.2em solid #41963C;
+    border-top: 0.2em solid;
 
     /* nécessaire pour afficher les pseudo-éléments */
     content: "";
@@ -147,17 +157,20 @@ h3
     /* espace les traits du texte */
     margin: 45px 100px;
 }
+.hr::before
+{
+    background-image: linear-gradient(to left, #3D923A, #BEFF7F);
+}
 /*Mise en page section footer ----------------------------------------------------*/
 footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width:1281px;
+    width:calc(100% - 16px);
     height: 137px;
     font-size: 30px;
     background: #579C87;
     position: fixed;
-    right: 0px;
     left: 8px;
     bottom: 0px;
 }
