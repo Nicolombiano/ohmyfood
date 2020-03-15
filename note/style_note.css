@@ -4,13 +4,13 @@ Programme CSS
 Réalisé par Nicolas CHANTEPIE 
 */
 
-
 /*Début de programmation*/
+
 /*Déclaration des polices-----------------------------------------------------------*/
 
 @font-face {
     font-family: 'kalam';
-    src:  url('../police/kalam/Kalam-Regular.ttf') format('truetype');
+    src:  url('../police/kalam/Kalam-Light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -22,6 +22,19 @@ Réalisé par Nicolas CHANTEPIE
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'montserrat-semibold';
+    src:  url('../police/montserrat/Montserrat-SemiBold.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'devonshire';
+    src:  url('../police/devonshire/Devonshire-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 /*Fin de déclaration des polices--------------------------------------------------*/
 
 body
@@ -29,8 +42,7 @@ body
     display:flex;
     flex-direction:column;
     color: #3D1319;
-    width:1281px;
-    height:2285px;
+
     font-family: 'montserrat', Impact, Helvetica, serif ;
 }
 /*Mise en page header-------------------------------------------------------------*/
@@ -44,7 +56,8 @@ header {
 }
 h1 {
     color: #FDCB46;
-    font-size: 10em;
+    font-size: 8em;
+    font-family: 'montserrat-semibold','montserrat', Impact, Helvetica, serif ;
 }
 /*Fin de mise en page header------------------------------------------------------*/
 
@@ -53,24 +66,30 @@ section
 {
     display:flex;
     flex-direction:column; 
-    width: 1181px;
-    height: 1782px;
-    margin: 50px 50px 201px 50px;
+    justify-content: center;
+    margin: auto;
+    width: 75%;
+    margin-bottom: 200px;
+    margin-top: 50px;
     background-color: #FDE1DD;
     font-family:'kalam', Impact, Helvetica, serif ;
 }
 
 #menu
  {
-    margin-top: 80px;
+    margin-top: 60px;
  }
 
 #prelude, #point_dorgue, #mouvement_final 
 {
     display:flex;
     justify-content: space-between;
-    font-size: 25px;
-    margin:80px 100px 80px 100px;
+    font-size: 30px;
+    margin:20px 100px 80px 100px;    
+}
+.tarifs
+{
+    font-size: 34px;
 }
 
 h3:hover
@@ -113,36 +132,43 @@ h3
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top:100px;
+    margin-top:130px;
     background-color: #FDE1DD;
-    height: 160px;  
+    height: 160px;   
 }   
     
-#logo p
+#logo h2
 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 62px;
+    font-size: 84px;
     height: 66px;
     margin-top:10px;
+    font-family: 'devonshire', Impact, Helvetica, serif ;  
 }
 #logo .fas
 {
     text-align: center;
     padding-top:5px;
-    font-size: 100px;
+    font-size: 120px;
     height: 120px;
 }
+.fas{
 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(left, #F15F62, #F6916A);
+
+}
 h2
 {
-    font-size: 45px;
+    font-size: 65px;
     text-align: center;
-    margin-bottom: 100px;
+    font-family: 'devonshire', Impact, Helvetica, serif ; 
 }
 p{
-    line-height: 30px;
+    line-height: 50px;
     margin: 0px;    
 }
 
@@ -153,12 +179,11 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width:1281px;
+    width: calc(100% - 16px);
     height: 137px;
     font-size: 30px;
     background: #579C87;
     position: fixed;
-    right: 0px;
     left: 8px;
     bottom: 0px;
 }
