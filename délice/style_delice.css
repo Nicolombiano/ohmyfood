@@ -32,6 +32,13 @@ Réalisé par Nicolas CHANTEPIE
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'montserrat-semibold';
+    src:  url('../police/montserrat/Montserrat-SemiBold.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 /*Fin de déclaration des polices--------------------------------------------------*/
 
 /*Mise en page corps*/
@@ -41,8 +48,6 @@ body
     display:flex;
     flex-direction:column;
     color: #3D1319;
-    width:1281px;
-    height:2285px;
     font-family: 'montserrat', Impact, Helvetica, serif ;
 }
 /*Mise en page header-------------------------------------------------------------*/
@@ -56,7 +61,8 @@ header {
 }
 h1 {
     color: #FDCB46;
-    font-size: 10em;
+    font-size: 8em;
+    font-family: 'montserrat-semibold','montserrat', Impact, Helvetica, serif ;
 }
 /*Fin de mise en page header------------------------------------------------------*/
 
@@ -65,9 +71,10 @@ section
 {
     display:flex;
     flex-direction:column; 
-    width: 1181px;
-    height: 1782px;
-    margin: 50px 50px 201px 50px;
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 200px;
     background-color: #F9F9F9;
     font-family:'caveatregular', Impact, Helvetica, serif ;
 }
@@ -84,17 +91,16 @@ section
     background-color: #F9F9F9;
 }
 
-#delice p
+h2
 {
-    margin-top: 50px;
-    padding-top: 20px;
+    margin-top: 150px;
     width: 700px;
     height: 100px;
     font-size: 70px;
     font-family: 'dancingscript', Impact, Helvetica,serif ;
-    background: -webkit-gradient(linear, left top, left bottom, from(#0228DD), to(#8F5BFE));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(left, #0228DD , #0889FB);
 }
 p
 {
@@ -105,10 +111,13 @@ p
 {
     display:flex;
     justify-content: space-between;
-    font-size: 25px;
+    font-size: 30px;
     margin:60px 100px 60px 100px;
 }
-
+.tarifs
+{
+    font-size: 34px;
+}
 h3:hover
 {
     text-decoration:underline;
@@ -117,7 +126,7 @@ h3:hover
 h3
 {
     text-align:center;
-    font-size: 30px;
+    font-size: 40px;
 }
 /* Partie insérer un text au milieur d'un trait-------------------------------------------*/
 #hr_commencer, #hr_continuer, #hr_terminer 
@@ -172,12 +181,11 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width:1281px;
+    width:calc(100% - 16px);
     height: 137px;
     font-size: 30px;
     background: #579C87;
     position: fixed;
-    right: 0px;
     left: 8px;
     bottom: 0px;
 }
