@@ -24,6 +24,13 @@ Réalisé par Nicolas CHANTEPIE
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'montserrat-semibold';
+    src:  url('../police/montserrat/Montserrat-SemiBold.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 /*Fin de déclaration des polices--------------------------------------------------*/
 
 body
@@ -31,8 +38,6 @@ body
     display:flex;
     flex-direction:column;
     color: #3D1319;
-    width:1281px;
-    height:2285px;
     font-family: 'montserrat', Impact, Helvetica, serif ;
 }
 /*Mise en page header-------------------------------------------------------------*/
@@ -48,18 +53,22 @@ header {
 h1 {
     color: #FDCB46;
     font-size: 8em;
+    font-family: 'montserrat-semibold','montserrat', Impact, Helvetica, serif ;
 }
 /*Fin de mise en page header------------------------------------------------------*/
 
 section
 {
     display:flex;
-    flex-direction:column; 
-    width: 1181px;
-    height: 1782px;
-    margin: 50px 50px 201px 50px;
+    flex-direction:column;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    width: 75%;
     background-color: #FFF5FE;
     font-family:'crimson', Impact, Helvetica, serif ;
+    
+
 }
 
 /*Mise en page section menu ------------------------------------------------------*/
@@ -76,17 +85,13 @@ section
     background-color: #FFF5FE;
 }
 
-#chic p
+h2
 {
-    padding-top: 20px;
+    padding-top: 120px;
     width: 700px;
     height: 100px;
     font-size: 65px;
     font-family: 'kurale', Impact, Helvetica,serif ;
-    
-}
-#chic p 
-{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: -webkit-linear-gradient(left, #DB8528, #8F5BFE);
@@ -94,7 +99,7 @@ section
 
 p
 {
-    line-height: 55px;
+    line-height: 65px;
     margin: 0px;    
 }
 
@@ -102,8 +107,8 @@ p
 {
     display:flex;
     justify-content: space-between;
-    font-size: 25px;
-    margin:60px 100px 60px 100px;   
+    font-size: 30px;
+    margin:0px 100px 120px 100px;   
 }
 
 #hr_appetit, #entrée
@@ -127,9 +132,8 @@ h3:hover
 
 h3
 {
-    font-style:italic;
     text-align:center;
-    font-size: 30px;
+    font-size: 40px;
 
 }
 
@@ -192,12 +196,11 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width:1281px;
+    width: calc(100% - 16px);
     height: 137px;
     font-size: 30px;
     background: #579C87;
     position: fixed;
-    right: 0px;
     left: 8px;
     bottom: 0px;
 }
