@@ -95,17 +95,16 @@ h1 {
 #menu
 {
     display:flex;
-    flex-wrap:wrap;  
+    flex-wrap:wrap;
     justify-content: center; 
+    border: 1px solid black;
 }
 
 #note 
 {   
     text-align: center;
-    margin:100px 50px 50px 157px;
+    margin:100px 80px 0px 100px;
     background-color: #FDE1DD;    
-   
-
 }
 
 #note .fas
@@ -133,7 +132,7 @@ h1 {
 }
 
 #chic {  
-    margin: 100px 157px 50px 50px;
+    margin: 100px 100px 0px 0px;
     background-color: #FFF5FE;
 }
 
@@ -155,12 +154,12 @@ h1 {
     font-size: 76px;
 }
 
-#délice 
+#delice 
 { 
-    margin: 50px 50px 100px 157px;
+    margin: 80px 80px 100px 100px;
     background-color: #F9F9F9;
 }
-#délice h2
+#delice h2
 {
     font-size: 48px;
     font-family: 'dancingscript', Impact, Helvetica, serif ;   
@@ -168,7 +167,7 @@ h1 {
     -webkit-text-fill-color: transparent;
     background-image: -webkit-linear-gradient(left, #0228DD, #0889FB);
 }
-#délice strong
+#delice strong
 {
     display: flex;
     justify-content: center;  
@@ -178,7 +177,7 @@ h1 {
 }
 #palette 
 {
-    margin: 50px 157px 100px 50px;
+    margin: 80px 100px 100px 0px;
     background-color: #FDFFFD;
 
 }
@@ -204,8 +203,10 @@ article {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 535px;
-    height: 759px;
+   /* width: 535px;
+    height: 759px; */
+    width: 435px;
+    height: 659px;
     box-shadow: 1px 1px 30px #EDEDED;
 }
 
@@ -378,3 +379,79 @@ aside:hover #apres
         opacity: 1;
     }
 }
+
+
+/*-----------programation respnsive ------------------------*/
+
+
+
+/* ---------------------------------------------------------------------------------
+    Programmation  en responsive grang ecran
+------------------------------------------------------------------------------------*/
+
+ 
+ @media all and (min-width: 1720px) 
+ { 
+    #menu
+    {
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;  
+    }
+
+    article
+    {
+        width: 385px;
+        height: 609px;
+        box-shadow: 1px 1px 30px #EDEDED;    
+    }
+    #note, #chic 
+    {
+        margin-bottom: 100px;
+    }
+    #chic
+    {
+        margin-right: 0px;
+    }
+    #delice, #palette
+    {
+        margin-top: 100px;
+    }
+}
+
+@media all and (max-width: 1185px)
+{ 
+
+    #menu
+    {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        
+    }
+
+   article
+    {
+        width:335px;
+        height: 559px;
+    }
+    
+} 
+
+@media all and (max-width: 789px) 
+
+{
+
+    #menu
+    {
+        display: flex;
+        flex-direction: column; 
+        width: auto;
+    
+    }
+    article
+    {
+        width:135px;
+        height: 559px;
+    }
+}  
