@@ -12,6 +12,12 @@ Réalisé par Nicolas CHANTEPIE
     font-style: normal;
 }
 @font-face {
+    font-family: 'montserrat-semibold';
+    src:  url('police/montserrat/Montserrat-SemiBold.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: 'devonshire';
     src:  url('police/devonshire/Devonshire-Regular.ttf') format('truetype');
     font-weight: normal;
@@ -68,13 +74,10 @@ body{
     display:flex;
     flex-direction:column;
     justify-content:space-between;
-    width:1500px;
-    height:2385px;
     font-family: 'montserrat', Impact, Helvetica, serif ;
 }
 
 /*----------Mise en page entête-----------*/
-
 header {
     height: 260px;
     display: flex;
@@ -84,23 +87,25 @@ header {
 h1 {
     margin: auto;
     color: #FDCB46;
-    font-size:10em;
+    font-size:8em;
+    font-family: 'montserrat-semibold','montserrat', Impact, Helvetica, serif ;
 }
 
 /*----------Mise en page menu-------------*/
-
 #menu
 {
     display:flex;
-    flex-wrap:wrap;   
+    flex-wrap:wrap;  
+    justify-content: center; 
 }
 
 #note 
 {   
-    display: flex;
-    flex-direction: column;
+    text-align: center;
     margin:100px 50px 50px 157px;
     background-color: #FDE1DD;    
+   
+
 }
 
 #note .fas
@@ -114,14 +119,17 @@ h1 {
 #note h2
 {
     margin-top: 5px;
-    font-size: 36px;
+    font-size: 48px;
+    color: #3D1319;
     font-family: 'devonshire', Impact, Helvetica, serif ;  
+
 }
 
 #note strong
 {
     font-family: 'Itim', Impact, Helvetica, serif ;
     color: #3D1319;
+    font-size: 76px;
 }
 
 #chic {  
@@ -131,7 +139,7 @@ h1 {
 
 #chic h2
 {
-    font-size: 36px;
+    font-size: 40px;
     font-family: 'kurale', Impact, Helvetica, serif ;   
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -144,6 +152,7 @@ h1 {
     justify-content: center;  
     font-family: 'abrilfatface', Impact, Helvetica, serif ;   
     color:#c77412;
+    font-size: 76px;
 }
 
 #délice 
@@ -153,7 +162,7 @@ h1 {
 }
 #délice h2
 {
-    font-size: 36px;
+    font-size: 48px;
     font-family: 'dancingscript', Impact, Helvetica, serif ;   
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -165,6 +174,7 @@ h1 {
     justify-content: center;  
     font-family: 'chilanka', Impact, Helvetica, serif ;   
     color:#0887FB;
+    font-size: 76px;
 }
 #palette 
 {
@@ -174,7 +184,7 @@ h1 {
 }
 #palette h2
 {
-    font-size: 36px;
+    font-size: 48px;
     font-family: 'kaushanscript', Impact, Helvetica, serif ;   
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -187,13 +197,16 @@ h1 {
     justify-content: center;  
     font-family: 'chilanka', Impact, Helvetica, serif ;   
     color:#72BF56;
+    font-size: 76px;
 }
-#note, #chic, #délice, #palette {
+
+article {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 535px;
     height: 759px;
+    box-shadow: 1px 1px 30px #EDEDED;
 }
 
 strong
@@ -208,10 +221,11 @@ aside {
     width: 655px;
     height: 117px;
     margin: auto;
+    margin-bottom: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 5em;
+    font-size: 4em;
     border-radius: 15px;
     background: #579C87;
     color: #FDCB46;
@@ -222,12 +236,12 @@ aside {
 footer {
     display: flex;
     justify-content: space-between;
+    width: calc(100% - 16px);
     height: 137px;
     margin-top: 100px;
     font-size: 30px;
     background: #579C87;
     position: fixed;
-    right: 0px;
     bottom: 0px;
     left: 8px; 
 }
@@ -278,17 +292,47 @@ a:link
     -webkit-animation-iteration-count: infinite ;
 }
 
-#note :hover , #délice :hover, #palette :hover
-{
-    transform: scale(1.6);
-    transition-duration: 180ms;
+/*Animation zoom menus-------------------------------*/
+article:hover .fas{
+    animation: zoomicone 1s forwards;
 }
-.zoom :hover
-{
-    transform: scale(1.6);
-    transition-duration: 180ms; 
+article:hover h2{
+    animation: zoomh2 1s forwards;
+}
+article:hover strong{
+    animation: zoomstrong 1s forwards;
 }
 
+@keyframes zoomicone
+{
+    0% {
+        font-size: 60px;
+    }
+
+    100% {
+        font-size: 130px;
+    }
+}@keyframes zoomh2
+{
+    0% {
+        font-size: 48px;
+    }
+
+    100% {
+        font-size: 56px;
+    }
+}@keyframes zoomstrong
+{
+    0% {
+        font-size: 76px;
+    }
+
+    100% {
+        font-size: 40px;
+    }
+}
+
+/*Animation points de suspension-------------------------------*/
 aside #apres, aside:hover #avant
 {
     display: none;
@@ -300,8 +344,6 @@ aside:hover #apres
     font-size: 1.9em;
     font-weight: bold;    
 }
-
-/*Animation points de suspension-------------------------------*/
 
 #point1
 {
@@ -336,7 +378,3 @@ aside:hover #apres
         opacity: 1;
     }
 }
-
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-image: -webkit-linear-gradient(left, #DB8528, #8F5BFE);
