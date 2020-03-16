@@ -384,7 +384,6 @@ aside:hover #apres
     }
 }
 
-
 /*-----------programation respnsive ------------------------*/
 
 
@@ -404,6 +403,8 @@ aside:hover #apres
 
     article
     {
+        display: flex;
+        justify-content: center;
         width: 535px;
         height: 759px; 
     }
@@ -422,6 +423,8 @@ aside:hover #apres
 
     article
     {
+        display: flex;
+        justify-content: center;
         width: 435px;
         height: 659px; 
     }
@@ -432,11 +435,13 @@ aside:hover #apres
 }
 
 
-@media all and (max-device-width: 889px) 
+@media all and (max-device-width: 767px) 
 {
 
     article
     {
+        display: flex;
+        justify-content: center;
         margin: auto;
         width: 535px;
         height: 759px; 
