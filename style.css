@@ -394,7 +394,25 @@ aside:hover #apres
 ------------------------------------------------------------------------------------*/
 
 
-@media all and (min-device-width: 890px) and (max-device-width: 1236px)
+@media all and (min-device-width: 1140px) and (max-device-width: 1620px)
+{
+    selection
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    article
+    {
+        width: 535px;
+        height: 759px; 
+    }
+    #note, #chic
+    {
+        margin-bottom: 80px;
+    }
+}
+@media all and (min-device-width: 768px) and (max-device-width: 1139px)
 {
     selection
     {
@@ -407,7 +425,12 @@ aside:hover #apres
         width: 435px;
         height: 659px; 
     }
+    #note, #chic
+    {
+        margin-bottom: 80px;
+    }
 }
+
 
 @media all and (max-device-width: 889px) 
 {
