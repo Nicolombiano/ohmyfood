@@ -112,7 +112,8 @@ section
 article
 {
     display: flex;
-    align-items:center;
+    justify-content:center;
+    align-items: center;
     width: 535px;
     height: 759px;
 }
@@ -403,8 +404,6 @@ aside:hover #apres
 
     article
     {
-        display: flex;
-        justify-content: center;
         width: 535px;
         height: 759px; 
     }
@@ -423,8 +422,6 @@ aside:hover #apres
 
     article
     {
-        display: flex;
-        justify-content: center;
         width: 435px;
         height: 659px; 
     }
@@ -440,8 +437,6 @@ aside:hover #apres
 
     article
     {
-        display: flex;
-        justify-content: center;
         margin: auto;
         width: 535px;
         height: 759px; 
