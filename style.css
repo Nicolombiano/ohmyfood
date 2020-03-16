@@ -5,6 +5,14 @@ Réalisé par Nicolas CHANTEPIE
 */
 
 /*Déclaration des polices-----------------------------------------------------------*/
+
+/* 
+Programme CSS
+-----------------
+Réalisé par Nicolas CHANTEPIE 
+*/
+
+/*Déclaration des polices-----------------------------------------------------------*/
 @font-face {
     font-family: 'montserrat';
     src:  url('police/montserrat/Montserrat-Regular.otf') format('truetype');
@@ -92,18 +100,26 @@ h1 {
 }
 
 /*----------Mise en page menu-------------*/
-#menu
+ 
+section
 {
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: center; 
-    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
-
+article
+{
+    display: flex;
+    align-items:center;
+    width: 385px;
+    height: 609px;
+}
 #note 
 {   
-    text-align: center;
-    margin:100px 80px 0px 100px;
+  
+    text-align: center;  
     background-color: #FDE1DD;    
 }
 
@@ -132,7 +148,7 @@ h1 {
 }
 
 #chic {  
-    margin: 100px 100px 0px 0px;
+
     background-color: #FFF5FE;
 }
 
@@ -156,9 +172,9 @@ h1 {
 
 #delice 
 { 
-    margin: 80px 80px 100px 100px;
     background-color: #F9F9F9;
 }
+
 #delice h2
 {
     font-size: 48px;
@@ -175,12 +191,12 @@ h1 {
     color:#0887FB;
     font-size: 76px;
 }
+
 #palette 
 {
-    margin: 80px 100px 100px 0px;
     background-color: #FDFFFD;
-
 }
+
 #palette h2
 {
     font-size: 48px;
@@ -199,33 +215,21 @@ h1 {
     font-size: 76px;
 }
 
-article {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   /* width: 535px;
-    height: 759px; */
-    width: 435px;
-    height: 659px;
-    box-shadow: 1px 1px 30px #EDEDED;
-}
-
 strong
 {
     font-size: 3em;
     font-weight: normal ;
 }
-
 /*----------Mise en page aside------------*/
 
 aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 655px;
     height: 117px;
     margin: auto;
     margin-bottom: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 4em;
     border-radius: 15px;
     background: #579C87;
@@ -386,72 +390,35 @@ aside:hover #apres
 
 
 /* ---------------------------------------------------------------------------------
-    Programmation  en responsive grang ecran
+    Programmation  en responsive 
 ------------------------------------------------------------------------------------*/
 
- 
- @media all and (min-width: 1720px) 
- { 
-    #menu
+@media all and (min-device-width: 890px) and (max-device-width: 1236px)
+{
+    selection
     {
         display: flex;
-        flex-direction: row; 
-        justify-content: center;  
+        flex-wrap: wrap;
     }
 
     article
     {
-        width: 385px;
-        height: 609px;
-        box-shadow: 1px 1px 30px #EDEDED;    
-    }
-    #note, #chic 
-    {
-        margin-bottom: 100px;
-    }
-    #chic
-    {
-        margin-right: 0px;
-    }
-    #delice, #palette
-    {
-        margin-top: 100px;
+        width: 435px;
+        height: 659px; 
     }
 }
 
-@media all and (max-width: 1185px)
-{ 
-
-    #menu
-    {
-        display: flex;
-        justify-content: center;
-        width: auto;
-        
-    }
-
-   article
-    {
-        width:335px;
-        height: 559px;
-    }
-    
-} 
-
-@media all and (max-width: 789px) 
-
+@media all and (max-device-width: 889px) 
 {
 
-    #menu
-    {
-        display: flex;
-        flex-direction: column; 
-        width: auto;
-    
-    }
     article
     {
-        width:135px;
-        height: 559px;
+        margin: auto;
+        width: 535px;
+        height: 759px; 
     }
-}  
+    #note, #chic, #delice
+    {
+        margin-bottom: 80px;
+    }
+}
