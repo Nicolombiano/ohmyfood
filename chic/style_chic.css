@@ -57,7 +57,7 @@ h1 {
 }
 /*Fin de mise en page header------------------------------------------------------*/
 
-section
+#bloc_page
 {
     display:flex;
     flex-direction:column;
@@ -68,21 +68,31 @@ section
     background-color: #FFF5FE;
     font-family:'crimson', Impact, Helvetica, serif ;
     
-
 }
-
+#chic 
+{
+    background-color:  #FFF5FE;
+}
 /*Mise en page section menu ------------------------------------------------------*/
 
-#menu{
+#menu
+{
     margin-top: 80px;
- }
+}
 
-#chic {
-    display: flex;
-    justify-content: center;
-    font-size: 45px;
-    text-align: center;
-    background-color: #FFF5FE;
+.prix
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#dessert
+{
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 h2
@@ -95,20 +105,13 @@ h2
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: -webkit-linear-gradient(left, #DB8528, #8F5BFE);
+
 }
 
 p
 {
-    line-height: 65px;
-    margin: 0px;    
-}
-
-#entrée, #plats, #dessert
-{
-    display:flex;
-    justify-content: space-between;
-    font-size: 30px;
-    margin:0px 100px 120px 100px;   
+   border: 1px solid black;  
+   font-size: 30px;
 }
 
 #hr_appetit, #entrée
@@ -189,7 +192,6 @@ h3
     margin: 45px 100px;
 }
 
-
 /*Mise en page section footer ----------------------------------------------------*/
 
 footer {
@@ -244,4 +246,19 @@ a:link
     -webkit-animation-name:shake;
     -webkit-animation-duration: 0.8s;
     -webkit-animation-iteration-count: infinite ;
+}
+
+@media all and (max-device-width: 767px) 
+{
+    #entrée, #plats, #dessert
+    {
+    
+        font-size: auto;  
+    }
+
+    .tarifs
+    {
+        line-height: 70px;
+    }
+ 
 }

@@ -114,8 +114,8 @@ article
     display: flex;
     justify-content:center;
     align-items: center;
-    width: 535px;
-    height: 759px;
+    width: 485px;
+    height: 709px;
 }
 #note 
 {   
@@ -135,7 +135,7 @@ article
 #note h2
 {
     margin-top: 5px;
-    font-size: 48px;
+    font-size: 36px;
     color: #3D1319;
     font-family: 'devonshire', Impact, Helvetica, serif ;  
 
@@ -155,7 +155,7 @@ article
 
 #chic h2
 {
-    font-size: 40px;
+    font-size: 26px;
     font-family: 'kurale', Impact, Helvetica, serif ;   
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -178,7 +178,7 @@ article
 
 #delice h2
 {
-    font-size: 48px;
+    font-size: 30px;
     font-family: 'dancingscript', Impact, Helvetica, serif ;   
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -200,7 +200,8 @@ article
 
 #palette h2
 {
-    font-size: 48px;
+    font-size: 30px;
+    width: 100%;
     font-family: 'kaushanscript', Impact, Helvetica, serif ;   
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -299,16 +300,27 @@ a:link
 }
 
 /*Animation zoom menus-------------------------------*/
-article:hover .fas{
+#note:hover .fas{
     animation: zoomicone 1s forwards;
 }
-article:hover h2{
+#note:hover h2{
     animation: zoomh2 1s forwards;
 }
-article:hover strong{
+#note:hover strong{
     animation: zoomstrong 1s forwards;
 }
-
+#chic:hover h2{
+    animation: zoomh2chic 1s forwards;
+}
+#chic:hover strong{
+    animation: zoomstrong 1s forwards;
+}
+#delice:hover h2, #palette:hover h2{
+    animation: zoomh2delicepalette 1s forwards;
+}
+#delice:hover strong, #palette:hover strong{
+    animation: zoomstrong 1s forwards;
+}
 @keyframes zoomicone
 {
     0% {
@@ -318,23 +330,45 @@ article:hover strong{
     100% {
         font-size: 130px;
     }
-}@keyframes zoomh2
+}
+@keyframes zoomh2
 {
     0% {
-        font-size: 48px;
+        font-size: 40px;
     }
 
     100% {
-        font-size: 56px;
+        font-size: 60px;
     }
-}@keyframes zoomstrong
+}
+@keyframes zoomh2chic
+{
+    0% {
+        font-size: 26px;
+    }
+
+    100% {
+        font-size: 35px;
+    }
+}
+@keyframes zoomh2delicepalette
+{
+    0% {
+        font-size: 30px;
+    }
+
+    100% {
+        font-size: 44px;
+    }
+}
+@keyframes zoomstrong
 {
     0% {
         font-size: 76px;
     }
 
     100% {
-        font-size: 40px;
+        font-size: 30px;
     }
 }
 
@@ -393,7 +427,7 @@ aside:hover #apres
     Programmation  en responsive 
 ------------------------------------------------------------------------------------*/
 
-
+/*
 @media all and (min-device-width: 1140px) and (max-device-width: 1620px)
 {
     selection
@@ -411,19 +445,20 @@ aside:hover #apres
     {
         margin-bottom: 80px;
     }
-}
-@media all and (min-device-width: 768px) and (max-device-width: 1139px)
+}*/
+
+@media all  and (min-device-width: 1320px)
 {
-    selection
+    section
     {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: row;
     }
 
     article
     {
-        width: 435px;
-        height: 659px; 
+        width: 335px;
+        height: 559px; 
     }
     #note, #chic
     {
@@ -431,18 +466,23 @@ aside:hover #apres
     }
 }
 
-
-@media all and (max-device-width: 767px) 
+@media all and (max-device-width: 985px) 
 {
+    section
+    {
+        display: flex;
+        flex-direction: column;
+    }
 
     article
     {
         margin: auto;
-        width: 535px;
-        height: 759px; 
+        width: 435px;
+        height: 659px; 
     }
     #note, #chic, #delice
     {
         margin-bottom: 80px;
     }
 }
+
