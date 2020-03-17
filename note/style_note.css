@@ -61,8 +61,7 @@ h1 {
 }
 /*Fin de mise en page header------------------------------------------------------*/
 
-/*Mise en page section menu ------------------------------------------------------*/
-section
+#bloc_page
 {
     display:flex;
     flex-direction:column; 
@@ -75,22 +74,32 @@ section
     font-family:'kalam', Impact, Helvetica, serif ;
 }
 
+#note
+{
+    background-color: #FDE1DD;
+}
+/*Mise en page section menu ------------------------------------------------------*/
+
+
 #menu
  {
     margin-top: 60px;
  }
 
-#prelude, #point_dorgue, #mouvement_final 
-{
-    display:flex;
-    justify-content: space-between;
-    font-size: 30px;
-    margin:20px 100px 80px 100px;    
-}
-.tarifs
-{
-    font-size: 34px;
-}
+ .prix
+ {
+     display:flex;
+     flex-direction: row;
+     justify-content: space-between;
+     margin-left: 100px;
+     margin-right: 100px;
+ }
+ 
+ #mouvement_final
+ {
+     margin-left: 100px;
+     margin-right: 100px;
+ }
 
 h3:hover
 {
@@ -168,8 +177,8 @@ h2
     font-family: 'devonshire', Impact, Helvetica, serif ; 
 }
 p{
-    line-height: 50px;
-    margin: 0px;    
+    
+    font-size: 30px;    
 }
 
 /*Fin de mise en page de la section menu -----------------------------------------*/
@@ -198,6 +207,8 @@ footer {
 
 span
 {
+    font-size: 26px;
+    font-family: 'montserrat', Impact, Helvetica, serif ;
     color: #FDCB46;
 }
 

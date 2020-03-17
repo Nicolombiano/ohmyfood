@@ -67,7 +67,7 @@ h1 {
 /*Fin de mise en page header------------------------------------------------------*/
 
 
-section
+#bloc_page
 {
     display:flex;
     flex-direction:column; 
@@ -78,21 +78,29 @@ section
     background-color: #F9F9F9;
     font-family:'caveatregular', Impact, Helvetica, serif ;
 }
+#delice
+{
+    background-color: #F9F9F9;  
+}
 /*Mise en page section menu ------------------------------------------------------*/
 
 #menu{
     margin-top: 80px;
  }
 
-#delice {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    background-color: #F9F9F9;
-}
+ .prix
+ {
+     display:flex;
+     flex-direction: row;
+     justify-content: space-between;
+     margin-left: 100px;
+     margin-right: 100px;
+ }
 
 h2
 {
+    display: flex;
+    justify-content: center;
     margin-top: 150px;
     width: 700px;
     height: 100px;
@@ -104,20 +112,10 @@ h2
 }
 p
 {
-    line-height: 55px;
-    margin: 0px;    
+    font-size: 30px;    
 }
-#entrée, #plats, #dessert
-{
-    display:flex;
-    justify-content: space-between;
-    font-size: 30px;
-    margin:60px 100px 60px 100px;
-}
-.tarifs
-{
-    font-size: 34px;
-}
+
+
 h3:hover
 {
     text-decoration:underline;
@@ -199,8 +197,11 @@ footer {
 
 span
 {
+    font-size: 26px;
+    font-family: 'montserrat', Impact, Helvetica, serif ;
     color: #FDCB46;
 }
+
 
 a:link
 {
