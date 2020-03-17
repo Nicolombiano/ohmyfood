@@ -486,12 +486,11 @@ aside:hover #apres
         width: 385px;
         height: 609px; 
     }
-    /*
+
     #note, #chic
     {
         margin-bottom: 80px;
     }
-    */
 }
 
 
@@ -506,8 +505,8 @@ aside:hover #apres
     article
     {
         margin: auto;
-        width: 435px;
-        height: 659px; 
+        width: 635px;
+        height: 859px; 
     }
     #note, #chic, #delice
     {
