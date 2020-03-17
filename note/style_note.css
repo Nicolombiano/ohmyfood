@@ -54,6 +54,18 @@ header {
     height: 260px;
     background:#579C87;
 }
+
+.far
+{
+    display: block;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    font-size: 45px;
+    color: #FDCB46;
+    float: left;
+}
+
 h1 {
     color: #FDCB46;
     font-size: 8em;
