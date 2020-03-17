@@ -84,7 +84,7 @@ h1 {
 /*Mise en page section menu ------------------------------------------------------*/
 
 #menu {
-    margin-top: 80px;
+    margin-top: 20px;
  }
 
  .prix
@@ -100,7 +100,6 @@ h2
 {
     display: flex;
     justify-content: center;
-    padding-top: 120px;
     width: 700px;
     height: 120px;
     font-size: 80px;
@@ -207,4 +206,47 @@ a:link
     -webkit-animation-name:shake;
     -webkit-animation-duration: 0.8s;
     -webkit-animation-iteration-count: infinite ;
+}
+/* ---------------------------------------------------------------------------------
+    Programmation  en responsive 
+------------------------------------------------------------------------------------*/
+
+
+@media all  and (min-device-width: 768px)and (max-device-width: 1024px) 
+{
+    #bloc_page
+    {
+        width: 99%;
+    }
+
+    .prix p
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #menu
+    {
+    margin-bottom: 50px;
+    }
+ 
+}
+
+@media all and (max-device-width: 767px) 
+{
+   
+    #bloc_page
+    {
+        width: 99%;
+    }
+  
+    .prix p
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #menu
+    {
+    margin-bottom: 50px;
+    }
 }

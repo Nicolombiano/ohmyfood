@@ -114,13 +114,8 @@ article
     display: flex;
     justify-content:center;
     align-items: center;
-    /*
-    width: 485px;
-    height: 709px;
-    */
     width: 535px;
     height: 759px;
-    border: solid 1px black;
 }
 #note 
 {   
