@@ -251,15 +251,16 @@ a:link
   
     .prix p
     {
+
         margin-top: 10px;
         margin-bottom: 10px;
-        font-size: 34px;
+        font-size: 40px;
     }
     #menu
     {
     margin-bottom: 50px;
     }
-    .tarif
+    .tarif 
     {
         width: 20%;
         text-align: end;
