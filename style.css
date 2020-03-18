@@ -114,8 +114,6 @@ article
     display: flex;
     justify-content:center;
     align-items: center;
-    width: 535px;
-    height: 759px;
 }
 #note 
 {   
@@ -450,6 +448,30 @@ aside:hover #apres
     }
 }
 
+@media all  and (min-width: 1025px)and (max-width: 1439px) 
+{
+    section
+    {
+        display: flex;
+        flex-direction: wrap;
+    }
+
+    article
+    {
+        width: 485px;
+        height: 709px; 
+    }
+
+    #note, #chic
+    {
+        margin-bottom: 80px;
+    }
+
+    #mentions h1
+    {
+        font-size: 6.7em;
+    }
+}
 
 @media all  and (min-width: 786px)and (max-width: 1024px) 
 {
@@ -491,7 +513,7 @@ aside:hover #apres
     }
     article
     {
-
+        margin: auto;
         width: 335px;
         height: 559px; 
     }
@@ -506,5 +528,17 @@ aside:hover #apres
         font-size: 5em;
     }
      
+    aside 
+    {
+        width: 100%;
+        font-size: 2em;
+       
+    }
+    footer
+    {
+        width: 100%;
+        font-size: 24px;
+        padding-left: 10px;
+    }
 }
 
