@@ -85,8 +85,7 @@ h1 {
 }
 #chic 
 {
-    background-color:  #FFF5FE;
-    border: 1px solid black;
+    background-color:  #fff5fe;
 }
 /*Mise en page section menu ------------------------------------------------------*/
 
@@ -123,8 +122,6 @@ h2
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: -webkit-linear-gradient(left, #DB8528, #8F5BFE);
-    border: 1px solid black;
-
 }
 
 #hr_appetit, #entrée
@@ -302,7 +299,6 @@ a:link
     {
         width: 20%;
         text-align: end;
-        border: solid black 1px;
     }
 
     

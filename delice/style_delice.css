@@ -181,6 +181,7 @@ h3
     /* espace les traits du texte */
     margin: 45px 100px;
 }
+
 /*Mise en page section footer ----------------------------------------------------*/
 footer {
     display: flex;
@@ -276,6 +277,10 @@ a:link
     h3 
     {
         font-size: 50px;
+    /*
+        border-top: black solid 3px;
+        border-bottom: black solid 3px;
+        */
     }
    
     .prix p
@@ -289,10 +294,11 @@ a:link
     {
     margin-bottom: 50px;
     }
-    
+
     .tarif
     {
         width: 20%;
         text-align: end;
     }
+
 }
