@@ -424,7 +424,7 @@ aside:hover #apres
     Programmation  en responsive 
 ------------------------------------------------------------------------------------*/
 
-@media all  and (min-device-width: 1440px)
+@media all  and (min-width: 1440px)
 {
     section
     {
@@ -443,7 +443,7 @@ aside:hover #apres
     }
 }
 
-@media all  and (min-device-width: 768px)and (max-device-width: 1024px) 
+@media all  and (min-width: 768px)and (max-width: 1024px) 
 {
     section
     {
@@ -469,7 +469,7 @@ aside:hover #apres
 }
 
 
-@media all and (max-device-width: 767px) 
+@media all and (max-width: 767px) 
 {
     section
     {
