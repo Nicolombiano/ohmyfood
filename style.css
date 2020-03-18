@@ -128,6 +128,7 @@ article
 {
     display: inline-block ;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: -webkit-linear-gradient(left, #F15F62, #F6916A);
 }
@@ -158,6 +159,7 @@ article
     font-size: 26px;
     font-family: 'kurale', Impact, Helvetica, serif ;   
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: -webkit-linear-gradient(left, #DB8528, #8F5BFE);
 }
@@ -181,6 +183,7 @@ article
     font-size: 30px;
     font-family: 'dancingscript', Impact, Helvetica, serif ;   
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: -webkit-linear-gradient(left, #0228DD, #0889FB);
 }
@@ -204,6 +207,7 @@ article
     width: 100%;
     font-family: 'kaushanscript', Impact, Helvetica, serif ;   
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: -webkit-linear-gradient(left, #3D923A, #BEFF7F);
 }
@@ -296,8 +300,11 @@ a:link
 .wiggle :hover
 {
     -webkit-animation-name:shake;
+    animation-name:shake;
     -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
     -webkit-animation-iteration-count: infinite ;
+    animation-iteration-count: infinite ;
 }
 
 /*Animation zoom menus-------------------------------*/
@@ -443,7 +450,8 @@ aside:hover #apres
     }
 }
 
-@media all  and (min-width: 768px)and (max-width: 1024px) 
+
+@media all  and (min-width: 786px)and (max-width: 1024px) 
 {
     section
     {
@@ -469,19 +477,23 @@ aside:hover #apres
 }
 
 
-@media all and (max-width: 767px) 
+@media all and (max-width: 785px) 
 {
     section
     {
         display: flex;
         flex-direction: column;
+        align-content: center;
     }
-
+    h1
+    {
+        font-size: 3.2em;
+    }
     article
     {
-        margin: auto;
-        width: 635px;
-        height: 859px; 
+
+        width: 335px;
+        height: 559px; 
     }
 
     #note, #chic, #delice
@@ -493,6 +505,6 @@ aside:hover #apres
     {
         font-size: 5em;
     }
-        
+     
 }
 

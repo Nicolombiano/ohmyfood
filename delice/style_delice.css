@@ -119,6 +119,7 @@ h2
     font-size: 70px;
     font-family: 'dancingscript', Impact, Helvetica,serif ;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: -webkit-linear-gradient(left, #0228DD , #0889FB);
 }
@@ -235,8 +236,11 @@ a:link
 .wiggle :hover
 {
     -webkit-animation-name:shake;
+    animation-name:shake;
     -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
     -webkit-animation-iteration-count: infinite ;
+    animation-iteration-count: infinite ;
 }
 
 
@@ -246,7 +250,7 @@ a:link
 ------------------------------------------------------------------------------------*/
 
 
-@media all  and (min-device-width: 768px)and (max-device-width: 1024px) 
+@media all  and (min-width: 768px)and (max-width: 1024px) 
 {
     #bloc_page
     {
@@ -266,7 +270,7 @@ a:link
    
 }
 
-@media all and (max-device-width: 767px) 
+@media all and (max-width: 767px) 
 {
    
     #bloc_page
