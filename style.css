@@ -420,35 +420,10 @@ aside:hover #apres
     }
 }
 
-/*-----------programation respnsive ------------------------*/
-
-
-
 /* ---------------------------------------------------------------------------------
     Programmation  en responsive 
 ------------------------------------------------------------------------------------*/
 
-/*
-@media all and (min-device-width: 1140px) and (max-device-width: 1620px)
-{
-    selection
-    {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    article
-    {
-        width: 535px;
-        height: 759px; 
-    }
-    #note, #chic
-    {
-        margin-bottom: 80px;
-    }
-}*/
-/*
-@media all  and (min-device-width: 1320px) */
 @media all  and (min-device-width: 1440px)
 {
     section
@@ -486,6 +461,11 @@ aside:hover #apres
     {
         margin-bottom: 80px;
     }
+
+    #mentions h1
+    {
+        font-size: 6.7em;
+    }
 }
 
 
@@ -503,9 +483,15 @@ aside:hover #apres
         width: 635px;
         height: 859px; 
     }
+
     #note, #chic, #delice
     {
         margin-bottom: 80px;
+    }
+
+    #mentions h1
+    {
+        font-size: 5em;
     }
 }
 
