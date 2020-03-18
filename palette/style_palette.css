@@ -248,22 +248,27 @@ a:link
     {
         width: 99%;
     }
-  
+    
+    h3 
+    {
+        font-size: 50px;
+    }
+
     .prix p
     {
-
         margin-top: 10px;
         margin-bottom: 10px;
         font-size: 40px;
     }
+
     #menu
     {
     margin-bottom: 50px;
     }
+    
     .tarif 
     {
         width: 20%;
         text-align: end;
-        border: solid black 1px;
     }
 }
