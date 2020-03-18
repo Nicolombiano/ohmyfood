@@ -57,8 +57,8 @@ header {
 {
     display: block;
     position: absolute;
-    left: 50px;
-    top: 50px;
+    left: 10px;
+    top: 10px;
     font-size: 45px;
     color: #FDCB46;
     float: left;
@@ -99,16 +99,16 @@ h1 {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 100px;
-    margin-right: 100px;
-    font-size: 30px;
+    margin-left: 75px;
+    margin-right: 75px;
+    font-size: 26px;
 }
 
 #dessert
 {
-    margin-left: 100px;
-    margin-right: 100px;
-    font-size: 30px;
+    margin-left: 75px;
+    margin-right: 75px;
+    font-size: 26px;
 }
 
 h2
@@ -125,16 +125,16 @@ h2
     background-image: -webkit-linear-gradient(left, #DB8528, #8F5BFE);
 }
 
-#hr_appetit, #entrée
+#appetit hr, #appetit
 {
     color: #C67412;
 }
 
-#hr_plaisir, #plats
+#plaisir hr, #plaisir
 {
     color: #A56799;
 }
-#hr_gourmandise, #dessert
+#gourmandise hr, #gourmandise
 {
     color: #6E4CCC;
 }
@@ -147,61 +147,24 @@ h3:hover
 h3
 {
     text-align:center;
-    font-size: 40px;
-
+    font-size: 30px;
 }
 
-/* Partie insérer un text au milieur d'un trait-------------------------------------------*/
-#hr_appetit, #hr_plaisir, #hr_gourmandise 
+#appetit, #plaisir,
+#gourmandise
 {
     display: flex;
-    align-items: center;
-    text-align: center;
-}
-#hr_appetit::before,
-#hr_appetit::after {
-    /* la couleur est volontairement absente ; ainsi elle sera celle du texte */
-    border-top: 0.2em solid #C67412;
+    justify-content: space-between;
+    align-items: center;     
+} 
 
-    /* nécessaire pour afficher les pseudo-éléments */
-    content: "";
-
-    /* partage le reste de la largeur disponible */
-    flex: 1;
-
-    /* espace les traits du texte */
-    margin: 45px 100px;
-}
-
-#hr_plaisir::before,
-#hr_plaisir::after {
-    /* la couleur est volontairement absente ; ainsi elle sera celle du texte */
-    border-top: 0.2em solid #A56799;
-
-    /* nécessaire pour afficher les pseudo-éléments */
-    content: "";
-
-    /* partage le reste de la largeur disponible */
-    flex: 1;
-
-    /* espace les traits du texte */
-    margin: 45px 100px;
-}
-
-#hr_gourmandise::before,
-#hr_gourmandise::after {
-    /* la couleur est volontairement absente ; ainsi elle sera celle du texte */
-    border-top: 0.2em solid #6E4CCC;
-
-    /* nécessaire pour afficher les pseudo-éléments */
-    content: "";
-
-    /* partage le reste de la largeur disponible */
-    flex: 1;
-
-    /* espace les traits du texte */
-    margin: 45px 100px;
-}
+hr
+{
+    border: 3px solid;
+    width: 225px;
+    margin-left: 75px;
+    margin-right: 75px;
+} 
 
 /*Mise en page section footer ----------------------------------------------------*/
 
@@ -270,6 +233,7 @@ a:link
     {
         width: 99%;
     }
+    
     .prix, #dessert
     {
         margin-left: 50px;
@@ -282,30 +246,73 @@ a:link
    
 }
 
-@media all and (max-width: 767px) 
+@media all and (max-width: 785px) 
 {
    
     #bloc_page
     {
-        width: 99%;
+        width: 95%;
+        margin-top: 0px;
     }
+
+    h1
+    {
+        font-size: 3.2em;
+    }
+    #appetit, #plaisir,
+#gourmandise
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-bottom: 50px;
+    border: solid black 1px; 
+} 
+#chic
+{
+    height: auto;
+}
+    
     .prix, #dessert
     {
-        margin-left: 30px;
-        margin-right: 30px;
-        font-size: 34px;
+        margin-left: 10px;
+        margin-right: 10px;  
+        font-size: 24px;  
+    }
+    h2 
+    {
+        font-size: 40px;
+        height: auto;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    h3  
+    {
+        border: solid black 1px; 
+        margin-top: 10px;  
+        margin-bottom: 10px;
     }
     #menu p
     {
         margin-top: 0px;
     }
+    
     .tarif
     {
         width: 20%;
         text-align: end;
     }
-
-    
-    
+    header
+        {
+            width: 100%;
+            height: auto;
+        }
+    footer
+    {
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+    }
 } 
 

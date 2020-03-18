@@ -505,7 +505,6 @@ aside:hover #apres
     {
         display: flex;
         flex-direction: column;
-        align-content: center;
     }
     h1
     {
