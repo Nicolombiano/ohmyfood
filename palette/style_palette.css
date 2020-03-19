@@ -62,8 +62,8 @@ header {
 {
     display: block;
     position: absolute;
-    left: 50px;
-    top: 50px;
+    left: 10px;
+    top: 10px;
     font-size: 45px;
     color: #FDCB46;
     float: left;
@@ -99,14 +99,16 @@ h1 {
     margin-top: 20px;
  }
 
+ section
+ {
+     margin: 0px 50px 100px 50px;
+ }
+
  .prix
  {
      display:flex;
      flex-direction: row;
      justify-content: space-between;
-     margin-left: 100px;
-     margin-right: 100px;
-     font-size: 30px;  
  }
 
 h2
@@ -134,36 +136,35 @@ h3
     font-size: 40px;
 }
 
-/* Partie insérer un text au milieur d'un trait-------------------------------------------*/
-.hr 
+#esquisse, #oeuvre,
+#sommet
 {
     display: flex;
-    align-items: center;
-    text-align: center;
-}
+    justify-content: space-between;
+    align-items: center;     
+} 
 
-.hr::before,
-.hr::after {
-    /* la couleur est volontairement absente ; ainsi elle sera celle du texte */
-    border-top: 0.2em solid;
-
-    /* nécessaire pour afficher les pseudo-éléments */
-    content: "";
-
-    /* partage le reste de la largeur disponible */
-    flex: 1;
-
-    /* espace les traits du texte */
-    margin: 45px 100px;
-}
-.hr::before
+hr
 {
-    background-image: linear-gradient(to left, #3D923A, #BEFF7F);
+    border: 3px solid;
+    width: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+} 
+
+#menu p
+{
+    margin-top: 20px;
+    line-height: 30px; 
+    font-size: 30px;    
 }
+
+/* Partie insérer un text au milieur d'un trait-------------------------------------------*/
+
+
 /*Mise en page section footer ----------------------------------------------------*/
 footer {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     width:calc(100% - 16px);
     height: 137px;
@@ -211,6 +212,22 @@ a:link
     100% {-webkit-transform: translate(2px,2px);}
 }
 
+@keyframes shake
+{
+    0% {-webkit-transform: translate(2px,2px);}
+    10% {-webkit-transform: translate(-2px, -2px);}
+    20% {-webkit-transform: translate(2px,2px);}
+    30% {-webkit-transform: translate(-2px, -2px);}
+    40% {-webkit-transform: translate(2px,2px);}
+    50% {-webkit-transform: translate(-2px, -2px);}
+    60% {-webkit-transform: translate(2px,2px);}
+    70% {-webkit-transform: translate(-2px, -2px);}
+    80% {-webkit-transform: translate(2px,2px);}
+    90% {-webkit-transform: translate(-2px, -2px);}
+    100% {-webkit-transform: translate(2px,2px);}
+}
+
+
 .wiggle :hover
 {
     -webkit-animation-name:shake;
@@ -220,60 +237,119 @@ a:link
     -webkit-animation-iteration-count: infinite ;
     animation-iteration-count: infinite ;
 }
-}
 /* ---------------------------------------------------------------------------------
     Programmation  en responsive 
 ------------------------------------------------------------------------------------*/
-
-
-@media all  and (min-width: 768px)and (max-width: 1024px) 
+@media all  and (min-width: 786px)and (max-width: 1024px) 
 {
     #bloc_page
     {
-        width: 99%;
+        width: 95%;
+    }
+    
+    #esquisse, #oeuvre,
+    #sommet
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    
+    hr 
+    {
+        width: 10px;
+    }
+    #menu p 
+    {
+        font-size: 26px;
+    }
+}
+
+/*
+@media all  and (min-width: 786px)and (max-width: 1024px) 
+{
+    #bloc_page
+    {
+        width: 95%;
     }
 
-    .prix p
+    #esquisse, #oeuvre,
+    #sommet
     {
-        margin-top: 10px;
-        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
     }
 
-    #menu
+    hr 
     {
-    margin-bottom: 50px;
+        width: 300px;
     }
  
 }
+*/
 
-@media all and (max-width: 767px) 
+@media all and (max-width: 785px) 
 {
    
+    header
+    {
+        width: 100%;
+        height: auto;
+    }
+
     #bloc_page
     {
-        width: 99%;
+        width: 95%;
+        margin-top: 0px;
+    }
+
+    h1
+    {
+        font-size: 3.2em;
     }
     
+    #esquisse, #oeuvre,
+    #sommet
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+    }
+
+    section
+    { 
+        margin: 10px 15px 50px 15px;
+    }
+
+    hr 
+    {
+        width: 200px;
+    }
+
     h3 
     {
-        font-size: 50px;
-    }
-
-    .prix p
-    {
-        margin-top: 10px;
+       font-size: 30px;
+        margin-top: 10px;  
         margin-bottom: 10px;
-        font-size: 40px;
     }
 
-    #menu
+    h2 
     {
-    margin-bottom: 50px;
+        height: auto;
+        font-size: 40px;
+        text-align: center;
+        margin-top: 30px;
     }
-    
-    .tarif 
+
+    #menu p
+    {
+        font-size: 26px;
+    }
+    .tarif
     {
         width: 20%;
         text-align: end;
     }
+
 }

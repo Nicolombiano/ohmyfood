@@ -58,8 +58,8 @@ header {
 {
     display: block;
     position: absolute;
-    left: 50px;
-    top: 50px;
+    left: 10px;
+    top: 10px;
     font-size: 45px;
     color: #FDCB46;
     float: left;
@@ -97,19 +97,22 @@ h1 {
     margin-top: 20px;
  }
 
- .prix
+ section
+ {
+     margin: 0px 50px 100px 50px;
+ }
+
+.prix
  {
      display:flex;
      flex-direction: row;
-     justify-content: space-between;
-     margin-left: 100px;
-     margin-right: 100px;
+     justify-content: space-between;  
  }
- 
- #mouvement_final
+
+ .tarif
  {
-     margin-left: 100px;
-     margin-right: 100px;
+    width: 10%;
+    text-align: end;  
  }
 
 h3:hover
@@ -120,31 +123,25 @@ h3:hover
 h3
 {
     text-align:center;
-    font-size: 40px;
+    font-size: 34px;
 }
 
-/* Partie insérer un text au milieur d'un trait-------------------------------------------*/
-.hr
+#prelude, #point_dorgue,
+#mouvement_final
 {
     display: flex;
-    align-items: center;
-    text-align: center;
-}
+    justify-content: space-between;
+    align-items: center;    
+    width: 100%;
+} 
 
-.hr::before,
-.hr::after {
-    /* la couleur est volontairement absente ; ainsi elle sera celle du texte */
-    border-top: 0.2em solid;
-
-    /* nécessaire pour afficher les pseudo-éléments */
-    content: "";
-
-    /* partage le reste de la largeur disponible */
-    flex: 1;
-
-    /* espace les traits du texte */
-    margin: 45px 100px;
-}
+hr
+{
+    border: 3px solid;
+    width: 275px;
+    margin-left: 50px;
+    margin-right: 50px;
+} 
 
 /*Mise en page header et footer logo*/
 #logo
@@ -167,6 +164,7 @@ h3
     margin-top:60px;
     font-family: 'devonshire', Impact, Helvetica, serif ;  
 }
+
 #logo .fas
 {
     text-align: center;
@@ -174,23 +172,25 @@ h3
     font-size: 120px;
     height: 120px;
 }
+
 .fas{
 
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: -webkit-linear-gradient(left, #F15F62, #F6916A);
-
 }
+
 h2
 {
     font-size: 65px;
     text-align: center;
     font-family: 'devonshire', Impact, Helvetica, serif ; 
 }
-p{
-    
-    font-size: 30px;    
+
+p
+{   
+    font-size: 26px;    
 }
 
 /*Fin de mise en page de la section menu -----------------------------------------*/
@@ -198,7 +198,6 @@ p{
 /*Mise en page section footer ----------------------------------------------------*/
 footer {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     width: calc(100% - 16px);
     height: 137px;
@@ -245,6 +244,21 @@ a:link
     100% {-webkit-transform: translate(2px,2px);}
 }
 
+@keyframes shake
+{
+    0% {-webkit-transform: translate(2px,2px);}
+    10% {-webkit-transform: translate(-2px, -2px);}
+    20% {-webkit-transform: translate(2px,2px);}
+    30% {-webkit-transform: translate(-2px, -2px);}
+    40% {-webkit-transform: translate(2px,2px);}
+    50% {-webkit-transform: translate(-2px, -2px);}
+    60% {-webkit-transform: translate(2px,2px);}
+    70% {-webkit-transform: translate(-2px, -2px);}
+    80% {-webkit-transform: translate(2px,2px);}
+    90% {-webkit-transform: translate(-2px, -2px);}
+    100% {-webkit-transform: translate(2px,2px);}
+}
+
 .wiggle :hover
 {
     -webkit-animation-name:shake;
@@ -254,20 +268,38 @@ a:link
     -webkit-animation-iteration-count: infinite ;
     animation-iteration-count: infinite ;
 }
-}
-
 
 @media all  and (min-width: 768px)and (max-width: 1024px) 
 {
     #bloc_page
     {
-        width: 99%;
+        width: 95%;
+    }
+   /* 
+    #prelude, #point_dorgue,
+    #mouvement_final
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    hr 
+    {    
+        width: auto;
+    }
+    
+    h3 
+    {
+        font-size: 10px;
+        margin-top: 10px;  
+        margin-bottom: 10px;
     }
 
     .prix, #mouvement_final
     {
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     #menu p
@@ -275,33 +307,85 @@ a:link
         margin-top: 0px;
         font-size: 28px;
     }
+    */
 }
 
 @media all and (max-width: 767px) 
 {
    
+    header
+    {
+        width: 100%;
+        height: auto;
+    }
+
+    h1
+    {
+        font-size: 3.2em;
+    }
+
     #bloc_page
     {
         width: 99%;
     }
-
-    .prix, #mouvement_final
+   #menu p 
+   {
+       font-size: 24px;
+   }
+    #prelude, #point_dorgue,
+    #mouvement_final
     {
-        margin-left: 30px;
-        margin-right: 30px;
-        font-size: 34px;
-
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        font-size: 10px;
+    
     }
-
-    #menu p
+    #entrée, #plats, #dessert
     {
+        margin-bottom: 40px;
+    }
+    h3 
+    {
+        font-size: 28px;
+        margin-top: 20px;  
+        margin-bottom: 20px;
+    }
+    #logo
+    {
+        margin-top: 50px;
+    }
+    #logo h2 
+    {
+        font-size: 40px;
+        height: auto;
+        text-align: center;
         margin-top: 0px;
-        font-size: 28px; 
     }
+    #logo .fas
+    {
+        font-size: 85px; 
+       
+       
+    }
+    .prix, #dessert
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+  
+    }
+    
     .tarif
     {
         width: 20%;
+        margin-left: 5px;
         text-align: end;
+        border: solid black 1px; 
     }
-
+    
+    header
+        {
+            width: 100%;
+            height: auto;
+        }
 }
