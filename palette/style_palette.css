@@ -124,24 +124,36 @@ h2
     -webkit-text-fill-color: transparent;
     background-image: -webkit-linear-gradient(left, #3D923A, #BEFF7F);
 }
-
-h3:hover
-{
-    text-decoration:underline;
-}
-
 h3
 {
     text-align:center;
     font-size: 40px;
 }
 
+/*----------------Trait animé-------------------*/
+.underline
+{  
+    text-align:center;
+    font-size: 40px;
+    font-family:'caveatregular', Impact, Helvetica, serif ;
+    color: black;
+    background: linear-gradient(to top,#B8FA7C 0%,  #B8FA7C 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .5s;
+}
+
+.underline:hover
+{
+    background-size: 100% 100%;
+}
+
+/*----------------Fin de l'animation-------------------*/
 #esquisse, #oeuvre,
 #sommet
 {
     display: flex;
     justify-content: space-between;
-    align-items: center;     
+    align-items: center;  
+    color: #B8FA7C;   
 } 
 
 hr

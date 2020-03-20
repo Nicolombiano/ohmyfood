@@ -125,16 +125,40 @@ h2
     background-image: -webkit-linear-gradient(left, #0228DD , #0889FB);
 }
 
-h3:hover
-{
-    text-decoration:underline;
-}
-
-h3
+#underline1, #underline2, #underline3
 { 
     text-align:center;
     font-size: 40px;
+    font-family:'caveatregular', Impact, Helvetica, serif ;
+    color: black;
 }
+/*----------------Trait animé-------------------*/
+#underline1
+{
+    background: linear-gradient(to top,#0228DD 0%,  #0228DD 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .5s;
+}
+
+#underline2
+{
+    background: linear-gradient(to top, #0670F3 0%,  #0670F3 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .5s;
+}
+
+#underline3
+{
+    background: linear-gradient(to top,#229DF9 0%,  #229DF9 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .5s;
+}
+
+#underline1:hover, #underline2:hover, #underline3:hover
+{
+    background-size: 100% 100%;
+}
+
+/*----------------Trait animé-------------------*/
+
+
 #commencer, #continuer,
 #terminer
 {
@@ -150,6 +174,21 @@ hr
     margin-left: 50px;
     margin-right: 50px;
 } 
+
+#commencer hr
+{
+    color: #0228DD;
+}
+
+#continuer hr 
+{
+    color: #0670F3;
+}
+
+#terminer hr
+{
+    color: #229DF9;
+}
 
 #menu p
 {

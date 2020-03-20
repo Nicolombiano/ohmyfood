@@ -119,54 +119,55 @@ h2
     background-image: -webkit-linear-gradient(left, #DB8528, #8F5BFE);
 }
 
-#appetit hr, #appetit
+#appetit hr
 {
     color: #C67412;
 }
 
-#plaisir hr, #plaisir
+#plaisir hr
 {
     color: #A56799;
 }
-#gourmandise hr, #gourmandise
+#gourmandise hr
 {
     color: #6E4CCC;
 }
-/*
-h3:hover
-{
-    text-decoration:underline;
-}
-*/
+
 h3
-{  
-    font-size: 40px;  
+{    
+    text-align:center;
+    font-size: 38px; 
 }
 
-/*----------------TEST TRAIT-------------------*/
-/*
-#test p
+/*----------------Trait animé-------------------*/
+#underline1
 {
-    border: 1px solid black;
-    height: 100px;
-    margin-top: 0px;
-    -webkit-animation: anim 4s 500ms infinite normal ease-out forwards;
-    animation: anim 4s 500ms infinite normal ease-out forwards;
-  }
-  
-  @-webkit-keyframes anim{
-  0% {width: 0px;}
-  100% {width: 250px;}
-  }
-  
-  @keyframes anim{
-  0% {width: 0px;}
-  100% {width: 250px;}
-  }
+    color:  #C67412;
+    background: linear-gradient(to top, #C67412 0%,  #C67412 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .5s;
+}
 
-*/
+#underline2
+{
+    color:  #A56799;
+    background: linear-gradient(to top,  #A56799 0%, #A56799 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .5s;
+}
 
-/*----------------TEST TRAIT-------------------*/
+#underline3
+{
+    color: #6E4CCC;
+    background: linear-gradient(to top,#6E4CCC 0%,  #6E4CCC 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .5s;
+}
+
+#underline1:hover, #underline2:hover, #underline3:hover
+{
+    background-size: 100% 100%;
+}
+/*----------------Trait animé-------------------*/
+ 
+
 #appetit, #plaisir,
 #gourmandise
 {

@@ -115,16 +115,23 @@ h1 {
     text-align: end;  
  }
 
-h3:hover
-{
-    text-decoration:underline;
-}
-
-h3
-{
+/*----------------Trait animé-------------------*/
+.underline
+{  
     text-align:center;
     font-size: 34px;
+    font-family:'kalam', Impact, Helvetica, serif ;
+    color: black;
+    background: linear-gradient(to top,black 0%,  black 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .5s;
 }
+
+.underline:hover
+{
+    background-size: 100% 100%;
+}
+/*----------------Fin de l'animation-------------------*/
+
 
 #prelude, #point_dorgue,
 #mouvement_final
