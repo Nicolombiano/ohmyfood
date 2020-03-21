@@ -132,31 +132,6 @@ h2
     font-family:'caveatregular', Impact, Helvetica, serif ;
     color: black;
 }
-/*----------------Trait animé-------------------*/
-#underline1
-{
-    background: linear-gradient(to top,#0228DD 0%,  #0228DD 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-    transition: background-size .5s;
-}
-
-#underline2
-{
-    background: linear-gradient(to top, #0670F3 0%,  #0670F3 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-    transition: background-size .5s;
-}
-
-#underline3
-{
-    background: linear-gradient(to top,#229DF9 0%,  #229DF9 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-    transition: background-size .5s;
-}
-
-#underline1:hover, #underline2:hover, #underline3:hover
-{
-    background-size: 100% 100%;
-}
-
-/*----------------Trait animé-------------------*/
 
 
 #commencer, #continuer,
@@ -197,6 +172,40 @@ hr
     font-size: 30px;    
 }
 
+.tarif
+    {
+        width: 20%;
+        margin-left: 30px;
+        text-align: end;
+    }
+
+/*----------------Trait animé-------------------*/
+#underline1
+{
+    background: linear-gradient(to top,#0228DD 0%,  #0228DD 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .5s;
+}
+
+#underline2
+{
+    background: linear-gradient(to top, #0670F3 0%,  #0670F3 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .5s;
+}
+
+#underline3
+{
+    background: linear-gradient(to top,#229DF9 0%,  #229DF9 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .5s;
+}
+
+#underline1:hover, #underline2:hover, #underline3:hover
+{
+    background-size: 100% 100%;
+}
+
+/*----------------Trait animé-------------------*/
+
+
 /*Mise en page section footer ----------------------------------------------------*/
 footer {
     display: flex;
@@ -208,13 +217,6 @@ footer {
     position: fixed;
     left: 8px;
     bottom: 0px;
-}
-.wiggle 
-{
-    width: 260px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 span
@@ -228,7 +230,24 @@ a:link
 {
     text-decoration: none;
 }
-/*Fin de mise en page section footer -----------------------------------------------*/
+
+.wiggle 
+{
+    width: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wiggle :hover
+{
+    -webkit-animation-name:shake;
+    animation-name:shake;
+    -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+    -webkit-animation-iteration-count: infinite ;
+    animation-iteration-count: infinite ;
+}
 
 @-webkit-keyframes shake
 {
@@ -258,23 +277,34 @@ a:link
     90% {-webkit-transform: translate(-2px, -2px);}
     100% {-webkit-transform: translate(2px,2px);}
 }
-.wiggle :hover
-{
-    -webkit-animation-name:shake;
-    animation-name:shake;
-    -webkit-animation-duration: 0.8s;
-    animation-duration: 0.8s;
-    -webkit-animation-iteration-count: infinite ;
-    animation-iteration-count: infinite ;
-}
+
+/*Fin de mise en page section footer -----------------------------------------------*/
 
 /* ---------------------------------------------------------------------------------
     Programmation  en responsive 
 ------------------------------------------------------------------------------------*/
+@media all  and (min-width: 1440px)
 
+{
+    hr 
+    {
+        width: 350px;
+    }
+
+}
 
 @media all  and (min-width: 786px)and (max-width: 1024px) 
 {
+    header
+    {
+        height: 150px;
+    }
+
+    h1
+    {
+        font-size: 4.2em;
+    }
+
     #bloc_page
     {
         width: 95%;
@@ -292,6 +322,21 @@ a:link
     {
         width: 400px;
     } 
+    h3 
+    {
+       font-size: 22px;
+    }
+
+    #menu p 
+    {
+        font-size: 22px;
+    }
+
+    footer
+    {
+        height: 100px;
+        font-size: 20px;
+    }
 }
 
 @media all and (max-width: 785px) 
@@ -299,8 +344,17 @@ a:link
    
     header
     {
-        width: 100%;
-        height: auto;
+        height: 100px;
+    }
+
+    .far
+    {
+        font-size: 30px;
+    }
+
+    h1
+    {
+        font-size: 3.2em;
     }
 
     #bloc_page
@@ -308,11 +362,7 @@ a:link
         width: 95%;
         margin-top: 0px;
     }
-    h1
-    {
-        font-size: 3.2em;
-    }
-
+    
     #commencer, #terminer,
     #continuer
     {
@@ -324,6 +374,11 @@ a:link
     { 
         margin: 10px 15px 50px 15px;
     }
+
+    hr 
+    {
+        width: 280px;
+    } 
 
     h3 
     {
@@ -342,13 +397,18 @@ a:link
 
     #menu p
     {
-        font-size: 26px;
+        font-size: 22px;
     }
 
     .tarif
     {
-        width: 20%;
-        text-align: end;
+        width: 10%;
     }
 
+    footer
+    {
+        height: 70px;
+        text-align: center;
+        padding-left: 10px;
+    }
 }

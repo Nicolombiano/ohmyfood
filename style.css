@@ -114,6 +114,7 @@ article
     display: flex;
     justify-content:center;
     align-items: center;
+    margin-bottom: 100px;
     box-shadow: 0px 0px 10px 5px #EDEDED ;
     width: 485px;
     height: 709px; 
@@ -495,6 +496,17 @@ aside:hover #apres
 */
 @media all  and (min-width: 786px)and (max-width: 1024px) 
 {
+
+    header
+    {
+        height: 150px;
+    }
+
+    h1
+    {
+        font-size: 4.2em;
+    }
+
     section
     {
         display: flex;
@@ -516,11 +528,25 @@ aside:hover #apres
     {
         font-size: 6.7em;
     }
+    aside 
+    {
+        width: 50%;
+        height: 100px;
+        font-size: 2em;
+    }
+    footer
+    {
+        height: 100px;
+        font-size: 20px;
+    }
 }
-
 
 @media all and (max-width: 785px) 
 {
+    header
+    {
+        height: 100px;
+    }
     section
     {
         display: flex;
@@ -549,15 +575,22 @@ aside:hover #apres
      
     aside 
     {
-        width: 100%;
-        font-size: 2em;
-       
+        width: 50%;
+        height: 50px;
+        font-size: 1em;
     }
+
     footer
     {
         width: 100%;
-        font-size: 24px;
+        height: 50px;
+        font-size: 16px;
         padding-left: 10px;
+    }
+
+    .wiggle
+    {
+        margin-right: 25px;
     }
 }
 

@@ -130,23 +130,6 @@ h3
     font-size: 40px;
 }
 
-/*----------------Trait animé-------------------*/
-.underline
-{  
-    text-align:center;
-    font-size: 40px;
-    font-family:'caveatregular', Impact, Helvetica, serif ;
-    color: black;
-    background: linear-gradient(to top,#B8FA7C 0%,  #B8FA7C 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-    transition: background-size .5s;
-}
-
-.underline:hover
-{
-    background-size: 100% 100%;
-}
-
-/*----------------Fin de l'animation-------------------*/
 #esquisse, #oeuvre,
 #sommet
 {
@@ -171,6 +154,31 @@ hr
     font-size: 30px;    
 }
 
+.tarif
+    {
+        width: 20%;
+        margin-left: 30px;
+        text-align: end;
+    }
+
+/*----------------Trait animé-------------------*/
+.underline
+{  
+    text-align:center;
+    font-size: 40px;
+    font-family:'caveatregular', Impact, Helvetica, serif ;
+    color: black;
+    background: linear-gradient(to top,#B8FA7C 0%,  #B8FA7C 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .5s;
+}
+
+.underline:hover
+{
+    background-size: 100% 100%;
+}
+
+/*----------------Fin de l'animation-------------------*/
+
 /* Partie insérer un text au milieur d'un trait-------------------------------------------*/
 
 
@@ -187,14 +195,6 @@ footer {
     bottom: 0px;
 }
 
-.wiggle
-{
-    width: 260px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 span
 {
     font-size: 26px;
@@ -207,8 +207,23 @@ a:link
     text-decoration: none;
 }
 
-/*Fin de mise en page section footer -----------------------------------------------*/
+.wiggle
+{
+    width: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.wiggle :hover
+{
+    -webkit-animation-name:shake;
+    animation-name:shake;
+    -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+    -webkit-animation-iteration-count: infinite ;
+    animation-iteration-count: infinite ;
+}
 @-webkit-keyframes shake
 {
     0% {-webkit-transform: translate(2px,2px);}
@@ -240,20 +255,33 @@ a:link
 }
 
 
-.wiggle :hover
-{
-    -webkit-animation-name:shake;
-    animation-name:shake;
-    -webkit-animation-duration: 0.8s;
-    animation-duration: 0.8s;
-    -webkit-animation-iteration-count: infinite ;
-    animation-iteration-count: infinite ;
-}
+/*Fin de mise en page section footer -----------------------------------------------*/
+
 /* ---------------------------------------------------------------------------------
     Programmation  en responsive 
 ------------------------------------------------------------------------------------*/
+@media all  and (min-width: 1440px)
+
+{
+    hr 
+    {
+        width: 350px;
+    }
+
+}
+
 @media all  and (min-width: 786px)and (max-width: 1024px) 
 {
+    header
+    {
+        height: 150px;
+    }
+
+    h1
+    {
+        font-size: 4.2em;
+    }
+
     #bloc_page
     {
         width: 95%;
@@ -267,47 +295,38 @@ a:link
         align-items: center; 
     }
     
-    hr 
+    h3 
     {
-        width: 10px;
+       font-size: 22px;
     }
+
     #menu p 
     {
-        font-size: 26px;
+        font-size: 22px;
+    }
+
+    footer
+    {
+        height: 100px;
+        font-size: 20px;
     }
 }
-
-/*
-@media all  and (min-width: 786px)and (max-width: 1024px) 
-{
-    #bloc_page
-    {
-        width: 95%;
-    }
-
-    #esquisse, #oeuvre,
-    #sommet
-    {
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-    }
-
-    hr 
-    {
-        width: 300px;
-    }
- 
-}
-*/
 
 @media all and (max-width: 785px) 
 {
    
     header
     {
-        width: 100%;
-        height: auto;
+        height: 100px;
+    }
+    .far
+    {
+        font-size: 30px;
+    }
+
+    h1
+    {
+        font-size: 3.2em;
     }
 
     #bloc_page
@@ -315,12 +334,7 @@ a:link
         width: 95%;
         margin-top: 0px;
     }
-
-    h1
-    {
-        font-size: 3.2em;
-    }
-    
+ 
     #esquisse, #oeuvre,
     #sommet
     {
@@ -341,7 +355,7 @@ a:link
 
     h3 
     {
-       font-size: 30px;
+       font-size: 20px;
         margin-top: 10px;  
         margin-bottom: 10px;
     }
@@ -356,12 +370,17 @@ a:link
 
     #menu p
     {
-        font-size: 26px;
+        font-size: 22px;
     }
     .tarif
     {
-        width: 20%;
-        text-align: end;
+        width: 10%;
     }
 
+    footer
+    {
+        height: 70px;
+        text-align: center;
+        padding-left: 10px;
+    }
 }

@@ -119,6 +119,14 @@ h2
     background-image: -webkit-linear-gradient(left, #DB8528, #8F5BFE);
 }
 
+#appetit, #plaisir,
+#gourmandise
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;     
+} 
+
 #appetit hr
 {
     color: #C67412;
@@ -133,10 +141,32 @@ h2
     color: #6E4CCC;
 }
 
-h3
+hr
+{
+    border: 3px solid;
+    width: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+} 
+
+#menu p
+{
+    margin-top: 20px;
+    line-height: 30px; 
+    font-size: 28px;    
+}
+
+.tarif
+    {
+        width: 10%;
+        margin-left: 30px;
+        text-align: end;
+    }
+#underline1, #underline2, #underline3
 {    
     text-align:center;
     font-size: 38px; 
+    font-family:'crimson', Impact, Helvetica, serif ;
 }
 
 /*----------------Trait animé-------------------*/
@@ -165,32 +195,7 @@ h3
 {
     background-size: 100% 100%;
 }
-/*----------------Trait animé-------------------*/
- 
-
-#appetit, #plaisir,
-#gourmandise
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;     
-} 
-
-hr
-{
-    border: 3px solid;
-    width: 200px;
-    margin-left: 50px;
-    margin-right: 50px;
-} 
-
-#menu p
-{
-    margin-top: 20px;
-    line-height: 30px; 
-    font-size: 30px;    
-}
-
+/*---------------- Fin de l'animation -------------------*/
 
 /*Mise en page section footer ----------------------------------------------------*/
 
@@ -206,14 +211,6 @@ footer {
     bottom: 0px;
 }
 
-.wiggle
-{
-    width: 260px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 span
 {
     font-size: 26px;
@@ -225,7 +222,23 @@ a:link
 {
     text-decoration: none;
 }
-/*Fin de mise en page section footer -----------------------------------------------*/
+
+.wiggle
+{
+    width: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wiggle :hover
+{
+    -webkit-animation-name:shake;
+    animation-name:shake;
+    -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+    -webkit-animation-iteration-count: infinite ;
+    animation-iteration-count: infinite ;
+}
 
 @-webkit-keyframes shake
 {
@@ -257,18 +270,35 @@ a:link
     100% {-webkit-transform: translate(2px,2px);}
 }
 
-.wiggle :hover
+/*Fin de mise en page section footer -----------------------------------------------*/
+
+/* ---------------------------------------------------------------------------------
+    Programmation  en responsive 
+------------------------------------------------------------------------------------*/
+
+@media all  and (min-width: 1440px)
+
 {
-    -webkit-animation-name:shake;
-    animation-name:shake;
-    -webkit-animation-duration: 0.8s;
-    animation-duration: 0.8s;
-    -webkit-animation-iteration-count: infinite ;
-    animation-iteration-count: infinite ;
+    hr 
+    {
+        width: 350px;
+    }
+
 }
+
 
 @media all  and (min-width: 786px)and (max-width: 1024px) 
 {
+    header
+    {
+        height: 150px;
+    }
+
+    h1
+    {
+        font-size: 4.2em;
+    }
+
     #bloc_page
     {
         width: 95%;
@@ -286,27 +316,43 @@ a:link
     {
         width: 400px;
     }
+
+    .tarif
+    {
+        margin-left: 20px;
+        width: 20%;
+        text-align: end;
+    }
+    footer
+    {
+        height: 100px;
+        font-size: 20px;
+    }
+
 }
 
 @media all and (max-width: 785px) 
 {
     header
     {
-        width: 100%;
-        height: auto;
-     }
+        height: 100px;
+    }
    
+    .far
+    {
+        font-size: 30px;
+    }
+    h1
+    {
+        font-size: 3.2em;
+    }   
+    
     #bloc_page
     {
         width: 95%;
         margin-top: 0px;
     }
 
-    h1
-    {
-        font-size: 3.2em;
-    }
-    
     #appetit, #plaisir,
     #gourmandise
     {
@@ -322,7 +368,14 @@ a:link
 
     hr 
     {
-        width: 300px;
+        width: 280px;
+    }
+
+    h3  
+    {
+        font-size: 22px;
+        margin-top: 10px;  
+        margin-bottom: 10px;
     }
 
     h2 
@@ -333,37 +386,21 @@ a:link
         margin-top: 30px;
     }
 
-    h3  
-    {
-        font-size: 30px;
-        margin-top: 10px;  
-        margin-bottom: 10px;
-    }
     #menu p 
     {
-        font-size: 26px;
+        font-size: 22px;
     }
     .tarif
     {
-        width: 20%;
-        text-align: end;
-    }
-    header
+        width: 10%;
+    }   
+    footer
     {
-            width: 100%;
-            height: auto;
+        height: 70px;
+        text-align: center;
+        padding-left: 10px;
     }
-
-    
 } 
 
-/*----------------TEST TRAIT-------------------*/
-
-
-   
-    /*
-    -webkit-animation: anim 4s 500ms infinite normal ease-out forwards;
-    animation: anim 4s 500ms infinite normal ease-out forwards; */
-  
    
   
