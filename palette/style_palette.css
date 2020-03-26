@@ -142,7 +142,7 @@ h3
 hr
 {
     border: 3px solid;
-    width: 200px;
+    width: 165px;
     margin-left: 50px;
     margin-right: 50px;
 } 
@@ -165,7 +165,7 @@ hr
 .underline
 {  
     text-align:center;
-    font-size: 40px;
+    font-size: 34px;
     font-family:'caveatregular', Impact, Helvetica, serif ;
     color: black;
     background: linear-gradient(to top,#B8FA7C 0%,  #B8FA7C 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
@@ -265,9 +265,8 @@ a:link
 {
     hr 
     {
-        width: 350px;
+        width: 300px;
     }
-
 }
 
 @media all  and (min-width: 786px)and (max-width: 1024px) 
@@ -295,9 +294,19 @@ a:link
         align-items: center; 
     }
     
-    h3 
+    hr
     {
-       font-size: 22px;
+        width: 250px;
+    }
+
+    .underline
+    {
+       font-size: 28px;
+    }
+    h3
+    { 
+        margin-top: 10px;  
+        margin-bottom: 10px;
     }
 
     #menu p 
@@ -353,9 +362,13 @@ a:link
         width: 200px;
     }
 
+    .underline
+    {
+    font-size: 26px;
+    }
+
     h3 
     {
-       font-size: 20px;
         margin-top: 10px;  
         margin-bottom: 10px;
     }
@@ -380,7 +393,10 @@ a:link
     footer
     {
         height: 70px;
-        text-align: center;
-        padding-left: 10px;
     }
+
+    .wiggle span
+        {
+            font-size: 10px;
+        }
 }

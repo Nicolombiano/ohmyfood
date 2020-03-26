@@ -302,10 +302,10 @@ a:link
 {
     hr 
     {
-        width: 350px;
+        width: 312px;
     }
 
-}
+} 
 
 @media all  and (min-width: 786px)and (max-width: 1024px) 
 {
@@ -317,7 +317,6 @@ a:link
     h1
     {
         font-size: 4.2em;
-        color: whitesmoke;
     }
 
     #bloc_page
@@ -396,7 +395,6 @@ a:link
   
     h3  
     {
-        font-size: 22px;
         margin-top: 10px;  
         margin-bottom: 10px;
     }
@@ -413,9 +411,7 @@ a:link
     }
     #logo .fas
     {
-        font-size: 85px; 
-       
-       
+        font-size: 85px;           
     }
    
     #menu p 
@@ -427,14 +423,16 @@ a:link
     {
         width: 20%;
         margin-left: 20px;
-        text-align: end;
-    
+        text-align: end; 
     }
     
     footer
     {
         height: 70px;
-        text-align: center;
-        padding-left: 10px;
     }
+
+    .wiggle span
+        {
+            font-size: 10px;
+        }
 }

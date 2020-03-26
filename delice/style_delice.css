@@ -128,7 +128,7 @@ h2
 #underline1, #underline2, #underline3
 { 
     text-align:center;
-    font-size: 40px;
+    font-size: 34px;
     font-family:'caveatregular', Impact, Helvetica, serif ;
     color: black;
 }
@@ -145,7 +145,7 @@ h2
 hr
 {
     border: 3px solid;
-    width: 200px;
+    width: 150px;
     margin-left: 50px;
     margin-right: 50px;
 } 
@@ -288,7 +288,7 @@ a:link
 {
     hr 
     {
-        width: 350px;
+        width: 310px;
     }
 
 }
@@ -320,16 +320,17 @@ a:link
     
     hr 
     {
-        width: 400px;
+        width: 300px;
     } 
-    h3 
+
+    #underline1, #underline2, #underline3
     {
-       font-size: 22px;
+        font-size: 32px;
     }
 
     #menu p 
     {
-        font-size: 22px;
+        font-size: 26px;
     }
 
     footer
@@ -377,12 +378,16 @@ a:link
 
     hr 
     {
-        width: 280px;
+        width: 260px;
     } 
 
+    #underline1, #underline2, #underline3
+    {
+        font-size: 28px;
+    }
+    
     h3 
     {
-       font-size: 30px;
         margin-top: 10px;  
         margin-bottom: 10px;
     }
@@ -408,7 +413,10 @@ a:link
     footer
     {
         height: 70px;
-        text-align: center;
-        padding-left: 10px;
     }
+
+    .wiggle span
+        {
+            font-size: 10px;
+        }
 }

@@ -588,9 +588,9 @@ aside:hover #apres
         padding-left: 10px;
     }
 
-    .wiggle
+    .wiggle span
     {
-        margin-right: 25px;
+        font-size: 10px;
     }
 }
 
