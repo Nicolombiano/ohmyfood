@@ -129,7 +129,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;    
-    width: 100%;
+
 } 
 
 hr
@@ -203,11 +203,11 @@ hr
 }
 
 .fas{
-
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-image: -webkit-linear-gradient(left, #F15F62, #F6916A);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   
 }
 
 /*Fin de mise en page de la section menu -----------------------------------------*/

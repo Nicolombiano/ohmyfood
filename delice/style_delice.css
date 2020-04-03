@@ -119,10 +119,10 @@ h2
     height: 100px;
     font-size: 70px;
     font-family: 'dancingscript', Impact, Helvetica,serif ;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-image: -webkit-linear-gradient(left, #0228DD , #0889FB);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
 }
 
 #underline1, #underline2, #underline3
@@ -132,7 +132,6 @@ h2
     font-family:'caveatregular', Impact, Helvetica, serif ;
     color: black;
 }
-
 
 #commencer, #continuer,
 #terminer
@@ -148,7 +147,7 @@ hr
     width: 150px;
     margin-left: 50px;
     margin-right: 50px;
-} 
+}
 
 #commencer hr
 {

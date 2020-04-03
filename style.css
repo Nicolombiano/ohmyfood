@@ -129,10 +129,11 @@ article
 #note .fas
 {
     display: inline-block ;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-image: -webkit-linear-gradient(left, #F15F62, #F6916A);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
 }
 
 #note h2
@@ -160,12 +161,12 @@ article
     font-size: 26px;
     margin-top: 20px;
     font-family: 'kurale', Impact, Helvetica, serif ;   
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-image: -webkit-linear-gradient(left, #DB8528, #8F5BFE);
-}
-
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   
+} 
 #chic strong
 {
     display: flex;
@@ -185,10 +186,10 @@ article
 {
     font-size: 30px;
     font-family: 'dancingscript', Impact, Helvetica, serif ;   
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-image: -webkit-linear-gradient(left, #0228DD, #0889FB);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 #delice strong
 {
@@ -209,10 +210,11 @@ article
     font-size: 30px;
     width: 100%;
     font-family: 'kaushanscript', Impact, Helvetica, serif ;   
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-image: -webkit-linear-gradient(left, #3D923A, #BEFF7F);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   
 }
 
 #palette strong
@@ -490,7 +492,7 @@ aside:hover #apres
     section
     {
         display: flex;
-        flex-direction: wrap;
+        flex-wrap: wrap;
     }
 
     article

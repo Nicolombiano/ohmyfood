@@ -113,11 +113,12 @@ h2
     height: 100px;
     font-size: 65px;
     font-family: 'kurale', Impact, Helvetica,serif ;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-image: -webkit-linear-gradient(left, #DB8528, #8F5BFE);
-}
+    background-clip: border-box; 
+   -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+   
+} 
 
 #appetit, #plaisir,
 #gourmandise
@@ -188,7 +189,7 @@ hr
 {
     color: #6E4CCC;
     background: linear-gradient(to top,#6E4CCC 0%,  #6E4CCC 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-    transition: background-size .5s;
+    transition: background-size 0.5s;
 }
 
 #underline1:hover, #underline2:hover, #underline3:hover
@@ -412,4 +413,3 @@ a:link
 } 
 
    
-  
