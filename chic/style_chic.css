@@ -49,7 +49,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 260px;
+    height: 200px;
     background:#579C87; 
 
 }
@@ -66,7 +66,7 @@ header {
 
 h1 {
     color: #FDCB46;
-    font-size: 8em;
+    font-size: 7em;
     font-family: 'montserrat-semibold','montserrat', Impact, Helvetica, serif ;
 }
 /*Fin de mise en page header------------------------------------------------------*/
@@ -203,8 +203,8 @@ footer {
     display: flex;
     justify-content: space-between;
     width: calc(100% - 16px);
-    height: 137px;
-    font-size: 30px;
+    height: 87px;
+    font-size: 24px;
     background: #579C87;
     position: fixed;
     left: 8px;
@@ -213,7 +213,6 @@ footer {
 
 span
 {
-    font-size: 26px;
     font-family: 'montserrat', Impact, Helvetica, serif ;
     color: #FDCB46;
 }
@@ -326,12 +325,12 @@ a:link
         width: 20%;
         text-align: end;
     }
+
     footer
     {
-        height: 100px;
-        font-size: 20px;
+        height: 77px;
+        font-size: 18px;
     }
-
 }
 
 @media all and (max-width: 785px) 
@@ -403,7 +402,7 @@ a:link
     }   
     footer
     {
-        height: 70px;
+        height: 50px;
     }
 
     .wiggle span

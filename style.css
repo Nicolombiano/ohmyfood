@@ -87,7 +87,7 @@ body{
 
 /*----------Mise en page entête-----------*/
 header {
-    height: 260px;
+    height: 200px;
     display: flex;
     background:#579C87;   
 }
@@ -95,7 +95,7 @@ header {
 h1 {
     margin: auto;
     color: #FDCB46;
-    font-size:8em;
+    font-size:7em;
     font-family: 'montserrat-semibold','montserrat', Impact, Helvetica, serif ;
 }
 
@@ -118,13 +118,12 @@ article
     box-shadow: 0px 0px 10px 5px #EDEDED ;
     width: 485px;
     height: 709px; 
-    #FBFBFB
 }
 #note 
 {   
   
     text-align: center;  
-    background-color: #FDE1DD;    
+    background-color: #FDE1DD;   
 }
 
 #note .fas
@@ -138,7 +137,6 @@ article
 
 #note h2
 {
-    margin-top: 5px;
     font-size: 36px;
     color: #3D1319;
     font-family: 'devonshire', Impact, Helvetica, serif ;  
@@ -160,6 +158,7 @@ article
 #chic h2
 {
     font-size: 26px;
+    margin-top: 20px;
     font-family: 'kurale', Impact, Helvetica, serif ;   
     -webkit-background-clip: text;
     background-clip: text;
@@ -170,7 +169,8 @@ article
 #chic strong
 {
     display: flex;
-    justify-content: center;  
+    justify-content: center; 
+    margin-top: -20px;
     font-family: 'abrilfatface', Impact, Helvetica, serif ;   
     color:#c77412;
     font-size: 76px;
@@ -251,9 +251,9 @@ footer {
     display: flex;
     justify-content: space-between;
     width: calc(100% - 16px);
-    height: 137px;
+    height: 87px;
     margin-top: 100px;
-    font-size: 30px;
+    font-size: 24px;
     background: #579C87;
     position: fixed;
     bottom: 0px;
@@ -516,8 +516,8 @@ aside:hover #apres
     }
     footer
     {
-        height: 100px;
-        font-size: 20px;
+        height: 77px;
+        font-size: 18px;
     }
     #mentions h1
     {
@@ -561,10 +561,7 @@ aside:hover #apres
 
     footer
     {
-        width: 100%;
         height: 50px;
-        font-size: 16px;
-        padding-left: 10px;
     }
 
     .wiggle span
